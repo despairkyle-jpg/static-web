@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html la
+ng="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redmont University</title>
+    <link rel="icon" href="logo2.png">
+    <style>
+        .box{
+            border-radius: 4px;
+            margin-left: 20px;
+            z-index: 1;
+            margin-top: 2px;
+            width: 1100px;
+            height: 570px;
+            background-color: rgb(240, 244, 244);
+            border: lightblue;
+            opacity: 0.9;
+            position: absolute;
+            box-shadow:
+            5px 5px 10px rgb(140, 139, 139),
+            -5px 5px 10px rgb(76, 75, 75);
+        }
+        .box2{
+            border-radius: 4px;
+            margin-left: 20px;
+            margin-top: 2px;
+            z-index: 2;
+            position: absolute;
+            width: 1100px;
+            height: 400px;
+            opacity: 0.9;
+            background-color: rgb(11, 54, 54);
+
+        }
+        .box3{
+    
+            margin-left: 20px;
+            margin-top: 33px;
+            z-index: 3;
+            position: absolute;
+            width: 1100px;
+            height: 40px;
+            opacity: 0.9;
+            background-color: rgb(233, 239, 239);
+        }
+        .email-icon{
+            z-index: 2;
+            position: absolute;
+            width: 18px;
+            margin-top: 10px;
+            margin-left: 150px;
+            cursor: pointer;
+            
+        }
+        .email{
+            z-index: 2;
+            position: absolute;
+            font-size: 13px;
+            margin-top: 10.5px;
+            margin-left: 170px;
+            cursor: pointer;
+            color: rgb(142, 142, 129);
+            
+        }
+        .email:hover{
+            color: rgb(167, 160, 151);
+        }
+        .call{
+            z-index: 2;
+            position: absolute;
+            width: 14px;
+            margin-top: 12px;
+            margin-left: 300px;
+            cursor: pointer;
+        }
+        .number{
+            z-index: 2;
+            position: absolute;
+            font-size: 12.5px;
+            margin-top: 12px;
+            margin-left: 320px;
+            cursor: pointer;
+            color: rgb(142, 142, 129);
+            
+        }
+        .alumni{
+            z-index: 2;
+            position: absolute;
+            font-size: 12.5px;
+            margin-top: 12px;
+            margin-left: 720px;
+            cursor: pointer;
+            color: rgb(163, 163, 151);
+            
+        }
+        .alumni:hover{
+            color: aliceblue;
+        }
+        
+        .calendar{
+            z-index: 2;
+            position: absolute;
+            font-size: 12.5px;
+            margin-top: 12px;
+            margin-left: 790px;
+            cursor: pointer;
+            color: rgb(163, 163, 151);
+            
+        }
+        .calendar:hover{
+            color: aliceblue;
+        }
+        .portal{
+            z-index: 2;
+            position: absolute;
+            font-size: 12.5px;
+            margin-top: 12px;
+            margin-left: 864px;
+            cursor: pointer;
+            color: rgb(163, 163, 151);
+            border-bottom: solid 3px white;
+            
+        }
+        .portal:hover{
+            color: aliceblue;
+        }
+        .support{
+            z-index: 2;
+            position: absolute;
+            font-size: 12.5px;
+            margin-top: 12px;
+            margin-left: 920px;
+            cursor: pointer;
+            color: rgb(163, 163, 151);
+            
+        }
+        .support:hover{
+            color: aliceblue;
+        }
+
+        .redmont{
+            z-index: 4;
+            position: absolute;
+            margin-top: 42px;
+            margin-left: 120px;
+            font-size:19px;
+            cursor: pointer;
+            
+        }
+        .university{
+            z-index: 4;
+            position: absolute;
+            margin-top: 44px;
+            margin-left: 200px;
+            font-size:17px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+
+         .home{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 355px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+            
+            
+            
+        }
+        .home:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+           
+           
+            
+        }
+         .pages{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 425px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .pages:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+        }
+         .acads{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 490px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .acads:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+        }
+        .ads{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 585px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .ads:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+        }
+        .course{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 680px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .course:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+
+        }
+        .news{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 760px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .news:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+        }
+        .uni{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 825px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .uni:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+        }
+        .search_bar{
+            position: absolute;
+            z-index: 3;
+            width: 145px;
+            height: 15px;
+            border-radius: 10px;
+            margin-top:44px ;
+            margin-left: 940px;
+        }
+        .search{
+            z-index: 4;
+            position: absolute;
+            width: 18px;
+            margin-top:45px ;
+            margin-left:1070px;
+            cursor: pointer;
+            
+        }
+        .university-pic{
+            opacity: 0.3;
+            filter: blur(1px);
+            position: absolute;
+            z-index: 3;
+            width: 400px;
+            border-radius: 10px;
+            height: 300px;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+         .model{
+            opacity: 0.6;
+            position: absolute;
+            z-index: 3;
+            width: 550px;
+            height: 327.9px;
+            margin-top: 73.5px;
+            margin-left: 569.5px;
+        }
+         .thebest{
+            z-index: 4;
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 260px;
+            font-size:13px;
+            color: rgb(183, 169, 150);
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .redmon{
+            z-index: 4;
+            position: absolute;
+            margin-top: 230px;
+            margin-left: 260px;
+            font-size:28px;
+            color: rgb(228, 221, 211);
+            font-weight:bold;
+            cursor: pointer;
+             
+        }
+         .univer{
+            z-index: 4;
+            position: absolute;
+            margin-top: 232px;
+            margin-left: 377px;
+            font-size:26px;
+            color: rgb(228, 221, 211);
+            font-weight: lighter;
+            cursor: pointer;
+             
+        }
+        .tour{
+            position: absolute;
+            z-index: 3;
+            margin-top: 280px;
+            margin-left: 260px;
+            background-color: beige;
+            border-radius: 5px;
+            width:90px;
+            height: 25px;
+            cursor: pointer;
+            
+        }
+        .tour:hover{
+            opacity: 0.7;
+            margin-top: 278px;
+
+        }
+        .box4{
+    
+            margin-left: 150px;
+            margin-top: 380px;
+            z-index: 5;
+            position: absolute;
+            width: 800px;
+            height: 80px;
+            border-radius: 10px;
+            background-color: rgb(233, 239, 239);
+        }
+       
+        #logo{
+            z-index: 3;
+            position: absolute;
+            width: 23px;
+            margin-top: 40px;
+            margin-left: 90px;
+            cursor: pointer; 
+            transition: 0.3s;
+            transform-origin: top;
+
+        }
+        .big{
+            transform:scale(20);
+            background-color: azure;
+            border-radius: solid;
+            border-radius: 50px;
+            margin-top: 100px;
+            margin-left: 150px;
+        }
+        .univ{
+            z-index: 5;
+            position: absolute;
+            margin-top: 405px;
+            margin-left: 213px;
+            font-size:14px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .logo2{
+            z-index: 5;
+            position: absolute;
+            width: 23px;
+            margin-top: 398px;
+            margin-left: 180px;
+            cursor: pointer; 
+        }
+        .grad{
+            z-index: 5;
+            position: absolute;
+            width: 23px;
+            margin-top: 401px;
+            margin-left: 380px;
+            cursor: pointer; 
+        }
+         .graduate{
+            z-index: 5;
+            position: absolute;
+            margin-top: 405px;
+            margin-left: 410px;
+            font-size:14px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .athlete{
+            z-index: 5;
+            position: absolute;
+            width: 23px;
+            margin-top: 398px;
+            margin-left: 580px;
+            cursor: pointer; 
+        }
+         .athl{
+            z-index: 5;
+            position: absolute;
+            margin-top: 405px;
+            margin-left: 610px;
+            font-size:14px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .social{
+            z-index: 5;
+            position: absolute;
+            width: 23px;
+            margin-top: 398px;
+            margin-left: 780px;
+            cursor: pointer; 
+        }
+         .socia{
+            z-index: 5;
+            position: absolute;
+            margin-top: 405px;
+            margin-left: 810px;
+            font-size:14px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .law{
+            position: absolute;
+            z-index: 6;
+            width: 300px;
+            height: 133px;
+            margin-top: 438.9px;
+            margin-left: 150px;
+            opacity: 0.9;
+        }
+         .melborn{
+            position: absolute;
+            z-index: 6;
+            width: 400px;
+            height: 133px;
+            margin-left: 450px;
+            margin-top: 438.9px;
+            opacity: 0.2;
+        }
+        .box5{
+    
+            margin-left: 450px;
+            margin-top: 438.9px;
+            z-index: 5;
+            position: absolute;
+            width: 400px;
+            height: 133px;
+            opacity: 0.9;
+            background-color: rgb(22, 53, 53);
+        }
+        .apply{
+            position: absolute;
+            z-index: 6;
+            color: rgb(222, 234, 234);
+            margin-left:40px;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .sy{
+            position: absolute;
+            z-index: 6;
+            color: rgb(130, 176, 176);
+            margin-left:40px;
+            margin-top: 35px;
+            font-size: 9px;
+        }
+        .quote{
+            position: absolute;
+            z-index: 6;
+            color: rgb(178, 199, 199);
+            margin-left:40px;
+            margin-top: 60px;
+            font-size: 15px;
+        }
+        .autor{
+            position: absolute;
+            z-index: 6;
+            color: rgb(171, 200, 200);
+            margin-left:170px;
+            margin-top: 94px;
+            font-size: 13px;
+        }
+        .applynow{
+            position: absolute;
+            z-index: 6;
+            width: 120px;
+            height: 30px;
+            background-color: rgb(165, 241, 174);
+            margin-top: 500px;
+            margin-left: 800px;
+            border-radius: 10px;
+            animation: glow 1s infinite alternate;
+
+
+        }
+        @keyframes glow{
+            form{box-shadow: 0 0 5px rgb(39, 122, 108);
+            }
+            to{
+                box-shadow: 0 0 20px rgb(120, 215, 115);
+            }
+    }
+        .applynow:hover{
+            opacity: 0.7;
+            margin-top: 498px;
+        }
+        .portal_box{
+            position: absolute;
+            border: solid;
+            width: 1100px;
+            height: 498px;
+            z-index: 7;
+            border-radius: 4px;
+            margin-left: 20px;
+            margin-top: 73px;
+            background-color: rgb(205, 215, 213);  
+        }
+       
+        .portal_icon{
+            position: absolute;
+            z-index: 9;
+            width: 40px;
+            height: 35px;
+            margin-top: 80px;
+            margin-left:40px;
+        }
+        .Portal{
+            z-index: 9;
+            position: absolute;
+            margin-top: 82px;
+            margin-left: 100px;
+            font-size:21px;
+            cursor: pointer;
+            color: rgb(176, 63, 63);
+            font-weight: bold;
+            
+        }
+         .back{
+            position: absolute;
+            z-index: 10;
+            width: 40px;
+            height: 30px;
+            margin-top: 37px;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        .back:hover{
+            background-color: rgb(142, 142, 138);
+            border-radius: 5px;
+        }
+        .horizontal_box{
+            position: absolute;
+            z-index: 8;
+            background-color: rgb(194, 198, 198);
+            width: 300px;
+            height: 215px;
+            margin-top: 73.5px;
+            margin-left: 20.7px;
+            border-top-right-radius: 10px;
+    
+        }
+        .mini_box{
+            position: absolute;
+            z-index: 8;
+            background-color: rgb(233, 240, 240);
+            width: 300px;
+            height: 282.5px;
+            margin-top: 289px;
+            margin-left: 20.7px;
+            border-bottom-right-radius: 10px;
+        }
+        
+        .circle1{
+            position: absolute;
+            z-index: 9;
+            width: 130px;
+            height: 130px;
+            border-radius: 5px;
+            border: 3px solid rgb(109, 139, 150);
+            margin-top: 130px;
+            margin-left: 100px;
+        }
+         .dp{
+            position: absolute;
+            z-index: 9;
+            width: 130px;
+            height: 130px;
+            border-radius: 5px;
+            margin-top: 133px;
+            margin-left: 102.6px;
+        }
+        .manuel{
+            position: absolute;
+            z-index: 9;
+            margin-top: 290px;
+            margin-left: 100px;
+            font-size: 16px;
+            font-weight: bold;
+
+        }
+        .name{
+            position: absolute;
+            z-index: 9;
+            margin-top: 245px;
+            margin-left: 100px;
+            font-size: 16px;
+            font-weight:lighter;
+        }
+        .year_level{
+            position: absolute;
+            z-index: 9;
+            margin-top: 310px;
+            margin-left: 100px;
+        }
+        .Ag_e{
+            position: absolute;
+            z-index: 9;
+            margin-top: 330px;
+            margin-left: 100px;
+        }
+        .home_room{
+            position: absolute;
+            z-index: 9;
+            margin-top: 350px;
+            margin-left: 100px;
+        }
+        .complete_details{
+            position:absolute;
+            z-index: 9;
+            margin-top: 390px;
+            margin-left: 100px;
+            color: blue;
+            cursor: pointer;
+        }
+        .complete_details:hover{
+            color: rgb(37, 186, 240);
+        }
+        .in_out_table{
+        position: absolute;
+        z-index: 9;
+        border: 2px solid rgb(107, 78, 78);
+        width: 300px;
+        height: 80px;
+        border-collapse: collapse;
+        margin-top: 100px;
+        margin-left: 330px;
+        background-color: rgb(189, 212, 212);
+        box-shadow:
+         2px 2px 2px rgb(211, 163, 163);
+
+        }
+        .in_out_table td{
+            z-index: 9;
+        margin: 3px;
+        border: 1px solid;
+        padding: 2px;
+        height: 10px;
+       }
+
+
+       .toggle-btn {
+        position: absolute;
+    z-index: 9;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 268px;
+    width: 20px;
+    height: 20px;
+    text-align: top;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 450px;
+    color: rgb(14, 40, 50);
+    background-color: rgb(216, 221, 223);
+    border: 2px solid rgb(19, 18, 18);
+    border-radius: 10px;
+}
+.toggle-btn:hover{
+    background-color: rgb(175, 172, 172);
+}
+
+
+.content {
+  z-index: 10;
+  position: absolute;
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  margin-top: 265px;
+  margin-left: 480px;
+  width: 270px;
+  height: 180px;
+  background: #f2f2f2;
+  border-radius: 10px;
+}
+.mini_content{
+    position: absolute;
+    z-index: 10;
+    margin-top: 15px;
+    width: 270px;
+    height: 170px;
+    background-color: rgb(243, 247, 247);
+}
+.new_grade{
+    position: absolute;
+    z-index: 9;
+    font-size: 14px;
+    margin-top: 270px;
+    margin-left: 340px;
+}
+
+.midterm{
+    position: absolute;
+    z-index: 9;
+    font-weight: bold;
+    margin-top: 300px;
+    margin-left: 340px;
+}
+._15minutes{
+    position: absolute;
+    z-index: 9;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 303px;
+    opacity: 0.6;
+    margin-left: 498px;
+    font-style: italic;
+}
+.presentation1{
+    position: absolute;
+    z-index: 9;
+    font-weight: bold;
+    margin-top: 340px;
+    margin-left: 340px;
+}
+._40minutes{
+    position: absolute;
+    z-index: 9;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 343px;
+    opacity: 0.6;
+    margin-left: 433px;
+    font-style: italic;
+}
+.attendan_ce{
+    position: absolute;
+    z-index: 9;
+    margin-top: 370px;
+    margin-left: 340px;
+    font-size: 15px;
+}
+.see_all1{
+    position: absolute;
+    z-index: 9;
+    margin-top: 372px;
+    margin-left: 460px;
+    font-size: 12px;color: blue;
+    cursor: pointer;
+}
+.todays{
+    position: absolute;
+    z-index: 9;
+    font-weight: lighter;
+    font-size: 15px;
+    margin-top: 392px;
+    margin-left: 340px;
+}
+.grade_table{
+        position: absolute;
+        z-index: 10;
+        border: 1px solid rgb(222, 210, 210);
+        width: 270px;
+        height: 170px;
+        border-collapse: collapse;
+        margin-top: 15px;
+        background-color: rgb(244, 248, 248);
+        box-shadow:
+         2px 2px 2px rgb(224, 220, 220);
+
+        }
+        .grade_table td{
+            z-index: 10;
+        margin: 3px;
+        border: 1px solid rgb(225, 222, 222);
+        padding: 2px;
+        height: 10px;
+        
+       }
+       .h_ci{
+        position: absolute;
+        z-index: 12;
+        font-weight: bold;
+        font-size: 16px;
+        color: rgb(8, 81, 70);
+        margin-top: -5px;
+       }
+
+
+
+
+        
+    </style>
+</head>
+<body class="container">
+
+    <div class="box"></div>
+    <div class="box2"></div>
+     <div class="box3"></div>
+     <div class="box4"></div>
+     <div class="circle1"></div>
+     <div class="horizontal_box"></div>
+     <div class="mini_box"></div>
+
+     <table class="in_out_table">
+        <tr style="font-weight: bold; background-color: antiquewhite;">
+            <td>Morning</td>
+            <td>March 2026</td>
+            
+        </tr>
+         <tr >
+            <td>Time in</td>
+            <td>Time Out</td>
+    
+        </tr>
+         <tr >
+            <td>10:30 </td>
+            <td>12:00 </td>
+    
+        </tr>
+        <tr style="font-weight: bold; background-color: antiquewhite;">
+            <td>Afternoon</td>
+            <td>March 2026</td>
+            
+        </tr>
+         <tr >
+            <td>Time in</td>
+            <td>Time Out</td>
+    
+        </tr>
+         <tr >
+            <td>13:30</td>
+            <td>16:00</td>
+    
+        </tr>
+     </table>
+     <div class="container">
+  <button class="toggle-btn" onclick="toggleContent(this)">+</button>
+  
+  <div class="content"><p class="h_ci">Human Computer Interaction</p>
+    <div class="mini_content"></div>
+    <table class="grade_table">
+
+        <tr>
+            <td>Exam:<br>Obtained</td>
+            <td>P1<br>90</td>
+        </tr>
+        <tr>
+            <td>Exam:<br>Obtained</td>
+            <td>P2<br>93</td>
+        </tr>
+        <tr>
+           <td>Exam:<br>Obtained</td>
+            <td>P3<br>100</td>
+        </tr>
+    </table>
+    
+  </div>
+</div>
+
+<script>
+function toggleContent(btn) {
+  const content = btn.nextElementSibling;
+
+  if (content.style.display === "block") {
+    content.style.display = "none";
+    btn.textContent = "+";
+  } else {
+    content.style.display = "block";
+    btn.textContent = "-";
+  }
+}
+</script>
+   
+    <div class="portal_box"></div>
+    <div><img src="portal.png" class="portal_icon"></im></div>
+    <div class="Portal"> Student Updates</div>
+    <div class="manuel">Despair Rofine Kyle B</div>
+    <div class="year_level">1st College</div>
+    <div class="Ag_e">Age:22</div>
+    <div class="home_room">Homeroom Teacher: <br>
+        <b>Juan Dela Cruz</div>
+
+    <div class="new_grade">NEW GRADES:</div>
+    <div class="midterm">Midterm Exam: <u style="color: rgb(19, 89, 89);">45/50</u> </div>
+    <div class="_15minutes">15 minutes ago</div>
+    <div class="presentation1">Presentation</div>
+    <div class="_40minutes">40 minutes ago</div>
+    <div class="attendan_ce">ATTENDANCE:</div>
+    <div class="see_all1"  onclick="alls()" ><u>see all </u></div>
+    <Script>
+        function alls(){
+            window.location.href="atten_dance.html";
+        }
+    </Script>
+    <div class="todays">03/30/2026: Present</div>
+        <div class="complete_details" onclick="student_5()"><u>View Complete Details</div>
+            <Script>
+                function student_5(){
+                    window.location.href="student_portal5.html";
+                }
+            </Script>
+   
+
+      <div><img src="emailicon.png" class="email-icon" title="Send Email">
+        <img src="call.png" class="call" title="Call">
+        <img src="search-icon.png" class="search">
+        <img src="logo.png" class="logo" title="Logo" id="logo" onclick="ToZoom()">
+        <script>
+            function ToZoom(){
+                document.getElementById("logo").classList.toggle("big")
+            }
+        </script>
+        <img src="logo.png" class="logo2">
+        <img src="grad.png" class="grad">
+        <img src="athlete.png" class="athlete">
+        <img src="social.png" class="social">
+        <img src="university.jpg" class="university-pic">
+        <img src="sam.jpeg" class="model">
+        <img src="law.jpg" class="law">
+        <img src="melborn.jpg" class="melborn">
+        <img src="kyl.jpg" class="dp">
+        <img src="back.png" class="back" onclick="back()">
+        <Script>
+            function back(){
+                window.location.href="portal.html";
+            }
+        </Script>
+       
+
+    </div>
+
+    <div><a href="https://mail.google.com/mail/u/0/#inbox" class="email" title=" Send Email">redmont@gmail.com</a>
+       
+        <p class="number" title="Call">+639774521540</p>
+        <p class="alumni" title="Visit Alumni" onclick="goToAlumni()">Alumni</p>
+        <Script>
+            function goToAlumni(){
+                window.location.href="Alumni.html";
+            }
+        </Script>
+        <p class="calendar" title="Date" onclick="goTocalendar()">Calendar</p>
+        <Script>
+            function goTocalendar(){
+                window.location.href="Calendar.html";
+            }
+        </Script>
+        <p class="portal" title="Visit Portal" onclick="goToportal()">Portal</p>
+        <Script>
+            function goToportal(){
+                window.location.href="Portal.html";
+            }
+        </Script>
+        <p class="support" title="Support Redmont University" onclick="goTosupport()"> Support RU</p>
+        <Script>
+            function goTosupport(){
+                window.location.href="Support.html";
+            }
+        </Script>
+        <p class="thebest">The Best University Of The Philippines</p>
+        <p class="redmon">Redmont</p>
+        <p class="univer">University</p>
+        <p class="univ">University Life</p>
+        <p class="graduate">Graduation</p>
+        <p class="athl">Athlete</p>
+        <p class="socia">Social</p>
+        
+        <div><button class="tour" title="Take a Tour">Take a Tour</button></div>
+        <div><button  class="applynow" title="Apply Now">Apply Now</button></div>
+    
+    </div>
+
+    
+        <div>
+            <h2 class="redmont" title="About Redmont University">Redmont </h2>
+            <h2 class="university" title="About Redmont University">University</h2>
+            <h2 class="home" title="Home" onclick="goTohome()">Home</h2>
+            <Script>
+                function goTohome(){
+                    window.location.href="index.html";
+                }
+            </Script>
+            <h2 class="pages" title="Pages" onclick="goTopage()">Pages</h2>
+            <Script>
+                function goTopage(){
+                    window.location.href="Pages.html";
+                }
+            </Script>
+            <h2 class="acads" title="Academics" onclick="goToacademics()">Academics</h2>
+            <Script>
+                function goToacademics(){
+                    window.location.href="Academics.html";
+                }
+            </Script>
+            <h2 class="ads" title="Admission" onclick="goToadmission()">Admission</h2>
+            <Script>
+                function goToadmission(){
+                    window.location.href="Admission.html";
+                }
+            </Script>
+            <h2 class="course" title="Courses" onclick="goTocourses()">Courses</h2>
+            <Script>
+                function goTocourses(){
+                    window.location.href="Courses.html";
+                }
+                
+            </Script>
+
+            <h2 class="news" title="News" onclick="goTonews()">News</h2>
+            <Script>
+                function goTonews(){
+                    window.location.href="News.html";
+                }
+            </Script>
+            <h2 class="uni" title="University Life" onclick="goTouniversity_life()">University Life</h2>
+            <Script>
+                function goTouniversity_life(){
+                    window.location.href="University_Life.html";
+                }
+            </Script>
+            <input  title="Search" type="text" class="search_bar">
+
+        </div>
+  
+    
+    
+</body>
+</html>
