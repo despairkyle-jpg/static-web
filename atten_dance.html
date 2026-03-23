@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html la
+ng="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redmont University</title>
+    <link rel="icon" href="logo2.png">
+    <style>
+        .box{
+            border-radius: 4px;
+            margin-left: 20px;
+            z-index: 1;
+            margin-top: 2px;
+            width: 1100px;
+            height: 570px;
+            background-color: rgb(240, 244, 244);
+            border: lightblue;
+            opacity: 0.9;
+            position: absolute;
+            box-shadow:
+            5px 5px 10px rgb(140, 139, 139),
+            -5px 5px 10px rgb(76, 75, 75);
+        }
+        .box2{
+            border-radius: 4px;
+            margin-left: 20px;
+            margin-top: 2px;
+            z-index: 2;
+            position: absolute;
+            width: 1100px;
+            height: 400px;
+            opacity: 0.9;
+            background-color: rgb(11, 54, 54);
+
+        }
+        .box3{
+    
+            margin-left: 20px;
+            margin-top: 33px;
+            z-index: 3;
+            position: absolute;
+            width: 1100px;
+            height: 40px;
+            opacity: 0.9;
+            background-color: rgb(233, 239, 239);
+        }
+        .email-icon{
+            z-index: 2;
+            position: absolute;
+            width: 18px;
+            margin-top: 10px;
+            margin-left: 150px;
+            cursor: pointer;
+            
+        }
+        .email{
+            z-index: 2;
+            position: absolute;
+            font-size: 13px;
+            margin-top: 10.5px;
+            margin-left: 170px;
+            cursor: pointer;
+            color: rgb(142, 142, 129);
+            
+        }
+        .email:hover{
+            color: rgb(167, 160, 151);
+        }
+        .call{
+            z-index: 2;
+            position: absolute;
+            width: 14px;
+            margin-top: 12px;
+            margin-left: 300px;
+            cursor: pointer;
+        }
+        .number{
+            z-index: 2;
+            position: absolute;
+            font-size: 12.5px;
+            margin-top: 12px;
+            margin-left: 320px;
+            cursor: pointer;
+            color: rgb(142, 142, 129);
+            
+        }
+        .alumni{
+            z-index: 2;
+            position: absolute;
+            font-size: 12.5px;
+            margin-top: 12px;
+            margin-left: 720px;
+            cursor: pointer;
+            color: rgb(163, 163, 151);
+            
+        }
+        .alumni:hover{
+            color: aliceblue;
+        }
+        
+        .calendar{
+            z-index: 2;
+            position: absolute;
+            font-size: 12.5px;
+            margin-top: 12px;
+            margin-left: 790px;
+            cursor: pointer;
+            color: rgb(163, 163, 151);
+            
+        }
+        .calendar:hover{
+            color: aliceblue;
+        }
+        .portal{
+            z-index: 2;
+            position: absolute;
+            font-size: 12.5px;
+            margin-top: 12px;
+            margin-left: 864px;
+            cursor: pointer;
+            color: rgb(163, 163, 151);
+            border-bottom: solid 3px white;
+            
+        }
+        .portal:hover{
+            color: aliceblue;
+        }
+        .support{
+            z-index: 2;
+            position: absolute;
+            font-size: 12.5px;
+            margin-top: 12px;
+            margin-left: 920px;
+            cursor: pointer;
+            color: rgb(163, 163, 151);
+            
+        }
+        .support:hover{
+            color: aliceblue;
+        }
+
+        .redmont{
+            z-index: 4;
+            position: absolute;
+            margin-top: 42px;
+            margin-left: 120px;
+            font-size:19px;
+            cursor: pointer;
+            
+        }
+        .university{
+            z-index: 4;
+            position: absolute;
+            margin-top: 44px;
+            margin-left: 200px;
+            font-size:17px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+
+         .home{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 355px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+            
+            
+            
+        }
+        .home:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+           
+           
+            
+        }
+         .pages{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 425px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .pages:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+        }
+         .acads{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 490px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .acads:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+        }
+        .ads{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 585px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .ads:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+        }
+        .course{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 680px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .course:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+
+        }
+        .news{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 760px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .news:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+        }
+        .uni{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 825px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .uni:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+        }
+        .search_bar{
+            position: absolute;
+            z-index: 3;
+            width: 145px;
+            height: 15px;
+            border-radius: 10px;
+            margin-top:44px ;
+            margin-left: 940px;
+        }
+        .search{
+            z-index: 4;
+            position: absolute;
+            width: 18px;
+            margin-top:45px ;
+            margin-left:1070px;
+            cursor: pointer;
+            
+        }
+        .university-pic{
+            opacity: 0.3;
+            filter: blur(1px);
+            position: absolute;
+            z-index: 3;
+            width: 400px;
+            border-radius: 10px;
+            height: 300px;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+         .model{
+            opacity: 0.6;
+            position: absolute;
+            z-index: 3;
+            width: 550px;
+            height: 327.9px;
+            margin-top: 73.5px;
+            margin-left: 569.5px;
+        }
+         .thebest{
+            z-index: 4;
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 260px;
+            font-size:13px;
+            color: rgb(183, 169, 150);
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .redmon{
+            z-index: 4;
+            position: absolute;
+            margin-top: 230px;
+            margin-left: 260px;
+            font-size:28px;
+            color: rgb(228, 221, 211);
+            font-weight:bold;
+            cursor: pointer;
+             
+        }
+         .univer{
+            z-index: 4;
+            position: absolute;
+            margin-top: 232px;
+            margin-left: 377px;
+            font-size:26px;
+            color: rgb(228, 221, 211);
+            font-weight: lighter;
+            cursor: pointer;
+             
+        }
+        .tour{
+            position: absolute;
+            z-index: 3;
+            margin-top: 280px;
+            margin-left: 260px;
+            background-color: beige;
+            border-radius: 5px;
+            width:90px;
+            height: 25px;
+            cursor: pointer;
+            
+        }
+        .tour:hover{
+            opacity: 0.7;
+            margin-top: 278px;
+
+        }
+        .box4{
+    
+            margin-left: 150px;
+            margin-top: 380px;
+            z-index: 5;
+            position: absolute;
+            width: 800px;
+            height: 80px;
+            border-radius: 10px;
+            background-color: rgb(233, 239, 239);
+        }
+       
+        #logo{
+            z-index: 3;
+            position: absolute;
+            width: 23px;
+            margin-top: 40px;
+            margin-left: 90px;
+            cursor: pointer; 
+            transition: 0.3s;
+            transform-origin: top;
+
+        }
+        .big{
+            transform:scale(20);
+            background-color: azure;
+            border-radius: solid;
+            border-radius: 50px;
+            margin-top: 100px;
+            margin-left: 150px;
+        }
+        .univ{
+            z-index: 5;
+            position: absolute;
+            margin-top: 405px;
+            margin-left: 213px;
+            font-size:14px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .logo2{
+            z-index: 5;
+            position: absolute;
+            width: 23px;
+            margin-top: 398px;
+            margin-left: 180px;
+            cursor: pointer; 
+        }
+        .grad{
+            z-index: 5;
+            position: absolute;
+            width: 23px;
+            margin-top: 401px;
+            margin-left: 380px;
+            cursor: pointer; 
+        }
+         .graduate{
+            z-index: 5;
+            position: absolute;
+            margin-top: 405px;
+            margin-left: 410px;
+            font-size:14px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .athlete{
+            z-index: 5;
+            position: absolute;
+            width: 23px;
+            margin-top: 398px;
+            margin-left: 580px;
+            cursor: pointer; 
+        }
+         .athl{
+            z-index: 5;
+            position: absolute;
+            margin-top: 405px;
+            margin-left: 610px;
+            font-size:14px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .social{
+            z-index: 5;
+            position: absolute;
+            width: 23px;
+            margin-top: 398px;
+            margin-left: 780px;
+            cursor: pointer; 
+        }
+         .socia{
+            z-index: 5;
+            position: absolute;
+            margin-top: 405px;
+            margin-left: 810px;
+            font-size:14px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .law{
+            position: absolute;
+            z-index: 6;
+            width: 300px;
+            height: 133px;
+            margin-top: 438.9px;
+            margin-left: 150px;
+            opacity: 0.9;
+        }
+         .melborn{
+            position: absolute;
+            z-index: 6;
+            width: 400px;
+            height: 133px;
+            margin-left: 450px;
+            margin-top: 438.9px;
+            opacity: 0.2;
+        }
+        .box5{
+    
+            margin-left: 450px;
+            margin-top: 438.9px;
+            z-index: 5;
+            position: absolute;
+            width: 400px;
+            height: 133px;
+            opacity: 0.9;
+            background-color: rgb(22, 53, 53);
+        }
+        .apply{
+            position: absolute;
+            z-index: 6;
+            color: rgb(222, 234, 234);
+            margin-left:40px;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .sy{
+            position: absolute;
+            z-index: 6;
+            color: rgb(130, 176, 176);
+            margin-left:40px;
+            margin-top: 35px;
+            font-size: 9px;
+        }
+        .quote{
+            position: absolute;
+            z-index: 6;
+            color: rgb(178, 199, 199);
+            margin-left:40px;
+            margin-top: 60px;
+            font-size: 15px;
+        }
+        .autor{
+            position: absolute;
+            z-index: 6;
+            color: rgb(171, 200, 200);
+            margin-left:170px;
+            margin-top: 94px;
+            font-size: 13px;
+        }
+        .applynow{
+            position: absolute;
+            z-index: 6;
+            width: 120px;
+            height: 30px;
+            background-color: rgb(165, 241, 174);
+            margin-top: 500px;
+            margin-left: 800px;
+            border-radius: 10px;
+            animation: glow 1s infinite alternate;
+
+
+        }
+        @keyframes glow{
+            form{box-shadow: 0 0 5px rgb(39, 122, 108);
+            }
+            to{
+                box-shadow: 0 0 20px rgb(120, 215, 115);
+            }
+    }
+        .applynow:hover{
+            opacity: 0.7;
+            margin-top: 498px;
+        }
+        .portal_box{
+            position: absolute;
+            border: solid;
+            width: 1100px;
+            height: 498px;
+            z-index: 7;
+            border-radius: 4px;
+            margin-left: 20px;
+            margin-top: 73px;
+            background-color: rgb(205, 215, 213);  
+        }
+       
+        .portal_icon{
+            position: absolute;
+            z-index: 9;
+            width: 40px;
+            height: 35px;
+            margin-top: 80px;
+            margin-left:40px;
+        }
+        .Portal{
+            z-index: 9;
+            position: absolute;
+            margin-top: 82px;
+            margin-left: 100px;
+            font-size:21px;
+            cursor: pointer;
+            
+        }
+         .back{
+            position: absolute;
+            z-index: 10;
+            width: 40px;
+            height: 30px;
+            margin-top: 37px;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        .back:hover{
+            background-color: rgb(142, 142, 138);
+            border-radius: 5px;
+        }
+        .horizontal_box{
+            position: absolute;
+            z-index: 8;
+            background-color: rgb(151, 183, 183);
+            width: 200px;
+            height: 498.7px;
+            margin-top: 73.5px;
+            margin-left: 20.7px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .circle1{
+            position: absolute;
+            z-index: 9;
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            border: 3px solid rgb(109, 139, 150);
+            margin-top: 130px;
+            margin-left: 80px;
+        }
+         .dp{
+            position: absolute;
+            z-index: 9;
+            width: 81px;
+            height: 81px;
+            border-radius: 40.5px;
+            margin-top: 133px;
+            margin-left: 82px;
+        }
+        .manuel{
+            position: absolute;
+            z-index: 9;
+            margin-top: 220px;
+            margin-left: 45px;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        .name{
+             position: absolute;
+            z-index: 9;
+            margin-top: 245px;
+            margin-left: 53px;
+            font-size: 16px;
+            font-weight:lighter;
+        }
+        .horizline{
+            position: absolute;
+            z-index: 9;
+            width: 150px;
+            height: 3px;
+            margin-top: 290px;
+            margin-left: 40px;
+            background:linear-gradient(to right, transparent,rgb(79, 88, 82), transparent);
+        }
+    
+        .dash_icon{
+            position: absolute;
+            z-index: 9;
+            width: 20px;
+            height: 20px;
+            margin-top: 320px;
+            margin-left: 40px;
+            cursor: pointer;
+        }
+        .dash_icon:hover{
+            opacity: 0.7;
+        }
+        .dash:hover{
+            opacity: 0.7;
+        }
+        .dash{
+            display: flex;
+            position: absolute;
+            z-index: 9;
+            margin-top: 320px;
+            margin-left: 70px;
+            cursor: pointer;
+            
+            
+        }
+        .course_icon{
+            position: absolute;
+            z-index: 9;
+            width: 20px;
+            height: 20px;
+            margin-top: 360px;
+            margin-left: 40px;
+            cursor: pointer;
+        }
+        .courseses{
+            position: absolute;
+            z-index: 9;
+            width: 20px;
+            height: 20px;
+            margin-top: 360px;
+            margin-left: 70px;
+            cursor: pointer;
+            
+        }
+        .exam_icon{
+            position: absolute;
+            z-index: 9;
+            width: 20px;
+            height: 20px;
+            margin-top: 400px;
+            margin-left: 40px;
+            cursor: pointer;
+        }
+        .e_xam{
+            position: absolute;
+            z-index: 9;
+            margin-top: 400px;
+            margin-left: 70px;
+            cursor: pointer;
+        }
+        .students_icon{
+            position: absolute;
+            z-index: 9;
+            width: 20px;
+            height: 20px;
+            margin-top: 440px;
+            margin-left: 40px;
+            cursor: pointer;
+        }
+        .stu{
+            position: absolute;
+            z-index: 9;
+            margin-top: 440px;
+            margin-left: 70px;
+            cursor: pointer;
+        }
+        .attendance_icon{
+            position: absolute;
+            z-index: 9;
+            width: 20px;
+            height: 20px;
+            margin-top: 480px;
+            margin-left: 40px;
+            cursor: pointer;
+        }
+        .attend{
+            display: flex;
+            position: absolute;
+            z-index: 9;
+            margin-top: 473px;
+            margin-left: 30px;
+            cursor: pointer;
+            background-color: rgb(113, 151, 138);
+            border-radius: 5px;
+            width: 170px;
+            height: 30px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .grading_icon{
+            position: absolute;
+            z-index: 9;
+            width: 20px;
+            height: 20px;
+            margin-top: 520px;
+            margin-left: 40px;
+            cursor: pointer;
+        }
+        .grade{
+            position: absolute;
+            z-index: 9;
+            margin-top: 520px;
+            margin-left: 70px;
+            cursor: pointer;
+        }
+        .student_box{
+        position: absolute;
+        z-index: 9;
+        width: 700px;
+        height: 400px;
+        background-color: rgb(220, 236, 236);
+        border-radius: 10px;
+        margin-top: 130px;
+        margin-left: 280px;
+        border: lightblue;
+        box-shadow:
+        2px 2px 3px  gray,
+        -2px 2px 3px gray;
+       }
+       .table1{
+        position: absolute;
+        z-index: 9;
+        border: solid black;
+        width: 700px;
+        height: 400px;
+        border-collapse: collapse;
+        margin-top: 130px;
+        margin-left: 280px;
+       }
+       .table1 td{
+        margin: 3px;
+        border: 1px solid;
+        padding: 2px;
+        height: 10px;
+       }
+       .tr1{
+        font-weight: bold;
+        background-color: rgb(97, 129, 118);
+        
+        
+       }
+        
+       
+
+
+        
+    </style>
+</head>
+<body class="container">
+
+    <div class="box"></div>
+    <div class="box2"></div>
+     <div class="box3"></div>
+     <div class="box4"></div>
+     <div class="circle1"></div>
+     <div class="horizontal_box"></div>
+     <div class="horizline"></div>
+
+     <table class="table1">
+        <tr style="font-weight: bold; font-size: 17px; border: 2px solid black; background-color: rgb(81, 186, 202);"><td>March </td></tr>
+        <tr class="tr1">
+            <td>Name</td>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+            <td>07</td>
+            
+            
+            
+        </tr>
+        <tr class="tr2">
+            <td>Alvarez &nbsp; Reeden &nbsp; E.</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+             <td>Present</td>
+
+           
+            
+            
+        </tr>
+        
+        <tr>
+            <td>Bayaron &nbsp; Mary &nbsp; Grace &nbsp;  A</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+           
+        </tr>
+         <tr>
+            <td>Catalbas &nbsp; Ricajie &nbsp;B</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            
+            
+        </tr>
+        <tr>
+            <td>Despair &nbsp; Rofine &nbsp; Kyle  &nbsp; B</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+           
+        </tr>
+         <tr>
+            <td>Yue &nbsp; Winsome &nbsp; Shane&nbsp;  A</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            <td>Present</td>
+            
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+             <td></td>
+            <td></td>
+           
+        </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+             <td></td>
+            <td></td>
+            
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+             <td></td>
+              <td></td>
+            <td></td>
+           
+        </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+             <td></td>
+              <td></td>
+            <td></td>
+            
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+             <td></td>
+              <td></td>
+            <td></td>
+           
+        </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+             <td></td>
+            <td></td>
+            
+        </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+             <td></td>
+              <td></td>
+            <td></td>
+            
+            
+        </tr>
+     </table>
+   
+    <div class="portal_box"></div>
+    <div><img src="portal.png" class="portal_icon"></im></div>
+    <div class="Portal"> Faculty Portal</div>
+    <div class="manuel">Jomanuel Andrade</div>
+    <div class="name">Applied HCI Teacher</div>
+    <div class="dash.board">
+        <p class="dash" onclick="dash_board()">Dashboard</p>
+    <img  src="dashboard.png" class="dash_icon">
+    </div>
+    <Script>
+            function dash_board(){
+                window.location.href="Faculty_portal.html";
+            }
+        </Script>
+    <div class="courseses" onclick="courses()">Courses &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+    <Script>
+        function courses(){
+            window.location.href="cour_ses.html";
+        }
+    </Script>
+    <div class="e_xam" onclick="exam()">Exam</div>
+    <Script>
+        function exam(){
+            window.location.href="e_xam.html";
+        }
+    </Script>
+    <div class="stu" onclick="student()">Students</div>
+    <Script>
+        function student(){
+            window.location.href="stude_nt.html";
+        }
+    </Script>
+    <div class="attend" onclick="attendance()"> Attendance &nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <Script>
+        function attendance(){
+            window.location.href="atten_dance.html";
+        }
+    </Script>
+    <div class="grade" onclick="grading()">Grading</div>
+    <Script>
+        function grading(){
+            window.location.href="grad_ing.html";
+        }
+    </Script>
+   
+
+      <div><img src="emailicon.png" class="email-icon" title="Send Email">
+        <img src="call.png" class="call" title="Call">
+        <img src="search-icon.png" class="search">
+        <img src="logo.png" class="logo" title="Logo" id="logo" onclick="ToZoom()">
+        <script>
+            function ToZoom(){
+                document.getElementById("logo").classList.toggle("big")
+            }
+        </script>
+        <img src="logo.png" class="logo2">
+        <img src="grad.png" class="grad">
+        <img src="athlete.png" class="athlete">
+        <img src="social.png" class="social">
+        <img src="university.jpg" class="university-pic">
+        <img src="sam.jpeg" class="model">
+        <img src="law.jpg" class="law">
+        <img src="melborn.jpg" class="melborn">
+        <img src="dp.png" class="dp">
+        <img src="back.png" class="back" onclick="back()">
+        <Script>
+            function back(){
+                window.location.href="portal.html";
+            }
+        </Script>
+        <div>
+             
+            <img src="courses.png" class="course_icon">
+            <img src="exam.png" class="exam_icon">
+            <img src="students.png" class="students_icon">
+            <img src="attendance.png" class="attendance_icon">
+            <img src="grading.png" class="grading_icon">
+        </div>
+       
+
+    </div>
+
+    <div><a href="https://mail.google.com/mail/u/0/#inbox" class="email" title=" Send Email">redmont@gmail.com</a>
+       
+        <p class="number" title="Call">+639774521540</p>
+        <p class="alumni" title="Visit Alumni" onclick="goToAlumni()">Alumni</p>
+        <Script>
+            function goToAlumni(){
+                window.location.href="Alumni.html";
+            }
+        </Script>
+        <p class="calendar" title="Date" onclick="goTocalendar()">Calendar</p>
+        <Script>
+            function goTocalendar(){
+                window.location.href="Calendar.html";
+            }
+        </Script>
+        <p class="portal" title="Visit Portal" onclick="goToportal()">Portal</p>
+        <Script>
+            function goToportal(){
+                window.location.href="Portal.html";
+            }
+        </Script>
+        <p class="support" title="Support Redmont University" onclick="goTosupport()"> Support RU</p>
+        <Script>
+            function goTosupport(){
+                window.location.href="Support.html";
+            }
+        </Script>
+        <p class="thebest">The Best University Of The Philippines</p>
+        <p class="redmon">Redmont</p>
+        <p class="univer">University</p>
+        <p class="univ">University Life</p>
+        <p class="graduate">Graduation</p>
+        <p class="athl">Athlete</p>
+        <p class="socia">Social</p>
+        
+        <div><button class="tour" title="Take a Tour">Take a Tour</button></div>
+        <div><button  class="applynow" title="Apply Now">Apply Now</button></div>
+    
+    </div>
+
+    
+        <div>
+            <h2 class="redmont" title="About Redmont University">Redmont </h2>
+            <h2 class="university" title="About Redmont University">University</h2>
+            <h2 class="home" title="Home" onclick="goTohome()">Home</h2>
+            <Script>
+                function goTohome(){
+                    window.location.href="index.html";
+                }
+            </Script>
+            <h2 class="pages" title="Pages" onclick="goTopage()">Pages</h2>
+            <Script>
+                function goTopage(){
+                    window.location.href="Pages.html";
+                }
+            </Script>
+            <h2 class="acads" title="Academics" onclick="goToacademics()">Academics</h2>
+            <Script>
+                function goToacademics(){
+                    window.location.href="Academics.html";
+                }
+            </Script>
+            <h2 class="ads" title="Admission" onclick="goToadmission()">Admission</h2>
+            <Script>
+                function goToadmission(){
+                    window.location.href="Admission.html";
+                }
+            </Script>
+            <h2 class="course" title="Courses" onclick="goTocourses()">Courses</h2>
+            <Script>
+                function goTocourses(){
+                    window.location.href="Courses.html";
+                }
+                
+            </Script>
+
+            <h2 class="news" title="News" onclick="goTonews()">News</h2>
+            <Script>
+                function goTonews(){
+                    window.location.href="News.html";
+                }
+            </Script>
+            <h2 class="uni" title="University Life" onclick="goTouniversity_life()">University Life</h2>
+            <Script>
+                function goTouniversity_life(){
+                    window.location.href="University_Life.html";
+                }
+            </Script>
+            <input  title="Search" type="text" class="search_bar">
+
+        </div>
+  
+    
+    
+</body>
+</html>

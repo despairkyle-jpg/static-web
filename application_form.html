@@ -1,0 +1,2074 @@
+<!DOCTYPE html>
+<html la
+ng="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redmont University</title>
+    <link rel="icon" href="logo2.png">
+    <style>
+        .container{
+            position: absolute;
+            width: 650px;
+            height: 2500px;
+            margin-left: 265px;
+            margin-top: 8px;
+            border: 1px solid rgb(161, 156, 156);
+            border-radius: 5px;
+            background-color: rgb(243, 240, 240);
+            
+        }
+        .online{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 15px;
+            margin-left: 175px;
+            color: rgb(75, 72, 72);
+        }
+        .enter{
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            font-size: 14px;
+            margin-top: 35px;
+            margin-left: 195px;
+        }
+        .ru_logo{
+            position: absolute;
+            z-index: 2;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            margin-top: 5px;
+            margin-left: 120px;
+        }
+        .ru_logo1{
+            position: absolute;
+            z-index: 2;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            margin-top: 5px;
+            margin-left: 443px;
+        }
+        .line1{
+            position: absolute;
+            z-index: 2;
+            width:650px;
+            border: .4px solid;
+            margin-top: 75px;
+        }
+        .name_box{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            margin-top: 90px;
+            width: 170px;
+            height: 28px;
+            margin-top: 120px;
+            margin-left:30px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .name_box:focus{
+            outline:0.4px solid grey;
+        }
+        .name2_box{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            margin-top: 90px;
+            width: 170px;
+            height: 28px;
+            margin-top: 120px;
+            margin-left:240px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .name2_box:focus{
+            outline:0.4px solid grey;
+        }
+        .name3_box{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            margin-top: 90px;
+            width: 170px;
+            height: 28px;
+            margin-top: 120px;
+            margin-left:445px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .name3_box:focus{
+            outline:0.4px solid grey;
+        }
+        .nam_e{
+            position: absolute;
+            z-index: 2;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 93px;
+            margin-left: 32px;
+            color: rgb(98, 96, 96);
+        }
+        .lastname{
+         
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            margin-top: 152px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .firstname{
+         
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            margin-top: 152px;
+            margin-left: 242px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .middlename{
+         
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            margin-top: 152px;
+            margin-left: 446px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .b_date{
+            position: absolute;
+            z-index: 2;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 185px;
+            margin-left: 32px;
+            color: rgb(98, 96, 96); 
+        }
+        .month{
+            position: absolute;
+            border: 1px solid rgb(164, 156, 156);
+            border-radius: 3px;
+            outline: none;
+            font-weight: 100;
+            color: rgb(104, 104, 104);
+            margin-top: 210px;
+            margin-left: 32px;
+            width: 170px;
+            height: 28px;
+            
+        }
+        .month:focus{
+            
+            border-color: rgb(98, 94, 94);
+        }
+        .day{
+            position: absolute;
+            border: 1px solid rgb(164, 156, 156);
+            border-radius: 3px;
+            outline: none;
+            font-weight: 100;
+            color: rgb(104, 104, 104);
+            margin-top: 210px;
+            margin-left: 240px;
+            width: 170px;
+            height: 28px;
+            
+        }
+        .day:focus{
+            
+            border-color: rgb(98, 94, 94);
+        }
+        .year{
+            position: absolute;
+            border: 1px solid rgb(164, 156, 156);
+            border-radius: 3px;
+            outline: none;
+            font-weight: 100;
+            color: rgb(104, 104, 104);
+            margin-top: 210px;
+            margin-left: 445px;
+            width: 170px;
+            height: 28px;
+            
+        }
+        .year:focus{
+            
+            border-color: rgb(98, 94, 94);
+        }
+        .mon_th{
+         
+            position: absolute;
+            z-index: 2;
+            font-size: 15px;
+            font-weight: lighter;
+            margin-top: 240px;
+            margin-left: 32px;
+            color: rgb(98, 96, 96);
+        }.da_y{
+         
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            margin-top: 240px;
+            margin-left: 242px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .yea_r{
+         
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            font-size: 15px;
+            margin-top: 240px;
+            margin-left: 446px;
+            color: rgb(98, 96, 96);
+        }
+        .gender{
+            position: absolute;
+            z-index: 2;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 270px;
+            margin-left: 32px;
+            color: rgb(98, 96, 96); 
+        }
+      .radio {
+        position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 17px;
+  margin-top: 295px;
+  margin-left: 35px;
+  font-size: 15px;
+  color: #555;
+}
+.radio input:checked + .circle::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: #72767b; 
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.radio input {
+  display: none;
+}
+
+
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border: 1.5px solid #555;
+  border-radius: 50%;
+  position: relative;
+}
+.radios {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-top: 120px;
+  font-size: 15px;
+  margin-top: 295px;
+  margin-left: 170px;
+  font-size: 15px;
+  color: #555;
+}
+
+
+
+.circles {
+  width: 12px;
+  height: 12px;
+  border: 1.5px solid #555;
+  border-radius: 50%;
+  position: relative;
+}
+
+
+.radios input:checked + .circles::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: #72767b; 
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circleses {
+  width: 12px;
+  height: 12px;
+  border: 1.5px solid #555;
+  border-radius: 50%;
+  position: relative;
+}
+.radioses input:checked + .circleses::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: #72767b; 
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.radioses {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-top: 120px;
+  font-size: 15px;
+  margin-top: 295px;
+  margin-left: 320px;
+  font-size: 15px;
+  color: #555;
+}
+
+
+.radios input {
+  display: none;
+}
+.radioses input{
+    display: none;
+}
+.citizen{
+            position: absolute;
+            border: 0.9px solid rgb(164, 156, 156);
+            border-radius: 3px;
+            outline: none;
+            font-weight: 100;
+            color: rgb(104, 104, 104);
+            margin-top: 355px;
+            margin-left: 32px;
+            width: 260px;
+            height: 28px;
+            
+        }
+        .citizen:focus{
+            
+            border-color: rgb(98, 94, 94);
+        }
+        .what_is{
+            position: absolute;
+            z-index: 2;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 330px;
+            margin-left: 35px;
+            color: rgb(98, 96, 96); 
+        }
+        .phone_num{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            margin-top: 90px;
+            width: 260px;
+            height: 25px;
+            margin-top: 420px;
+            margin-left:30px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .name_box:focus{
+            outline:0.4px solid grey;
+        }
+        .email_add{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            margin-top: 90px;
+            width: 260px;
+            height: 25px;
+            margin-top: 485px;
+            margin-left:30px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .name_box:focus{
+            outline:0.4px solid grey;
+        }
+        .pho_ne{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 400px;
+            margin-left: 30px;
+            color: rgb(98, 96, 96); 
+        }
+        .e_mail{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 465px;
+            margin-left: 30px;
+            color: rgb(98, 96, 96); 
+        }
+        .permanent{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 525px;
+            margin-left: 30px;
+            color: rgb(98, 96, 96); 
+
+        }
+        .permanent_box{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            margin-top: 90px;
+            width: 400px;
+            height: 25px;
+            margin-top: 550px;
+            margin-left:30px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .perm{
+         
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            margin-top: 580px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .zip_code{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            margin-top: 90px;
+            width: 155px;
+            height: 25px;
+            margin-top: 550px;
+            margin-left:450px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .perm{
+         
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            margin-top: 580px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .postal{
+         
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            margin-top: 580px;
+            margin-left: 455px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .city{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            margin-top: 90px;
+            width: 260px;
+            height: 25px;
+            margin-top: 610px;
+            margin-left:30px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .Province{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            width: 260px;
+            height: 25px;
+            margin-top: 610px;
+            margin-left:330px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .ci_ty{
+         
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            margin-top: 640px;
+            margin-left: 34px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .prov{
+         
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            margin-top: 640px;
+            margin-left: 332px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        
+        .emergen{
+         
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 665px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+         }
+         .emergency{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            margin-top: 90px;
+            width: 120px;
+            height: 25px;
+            margin-top: 690px;
+            margin-left:30px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .eme{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            margin-top: 90px;
+            width: 120px;
+            height: 25px;
+            margin-top: 690px;
+            margin-left:170px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .las_ts{
+         
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            margin-top: 720px;
+            margin-left: 30px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .fir_sts{
+         
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            margin-top: 720px;
+            margin-left: 170px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .relation{
+         
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 745px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+         }
+         .rela{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            margin-top: 90px;
+            width: 260px;
+            height: 25px;
+            margin-top: 767px;
+            margin-left:30px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .ema_il{
+         
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 800px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+         }
+         .ema_il_box{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            margin-top: 90px;
+            width: 260px;
+            height: 25px;
+            margin-top: 824px;
+            margin-left:30px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .number_phone{
+         
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 860px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+         }
+         .number_phone_box{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            margin-top: 90px;
+            width: 260px;
+            height: 25px;
+            margin-top: 884px;
+            margin-left:30px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .speak{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 920px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+.lingwa {
+   position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 17px;
+  margin-top: 950px;
+  margin-left: 35px;
+  font-size: 15px;
+  color: #555;
+}
+.lingwa input:checked + .ci::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: #72767b; 
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.lingwa input {
+  display: none;
+}
+
+
+
+.ci {
+  width: 12px;
+  height: 12px;
+  border: 1.5px solid #555;
+  border-radius: 50%;
+  position: relative;
+}
+.lingwas {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 950px;
+  margin-left: 170px;
+  font-size: 15px;
+  color: #555;
+}
+
+
+
+.cir {
+  width: 12px;
+  height: 12px;
+  border: 1.5px solid #555;
+  border-radius: 50%;
+  position: relative;
+}
+
+
+.lingwas input:checked + .cir::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: #72767b; 
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.lingwas input {
+  display: none;
+}
+.line2{
+            position: absolute;
+            z-index: 2;
+            width:590px;
+            border: .1px solid;
+            opacity: 0.3;
+            margin-top: 1025px;
+            margin-left: 30px;
+        }
+        .edu1{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 1000px;
+            margin-left: 32px;
+            font-size: 18px;
+            color: rgb(62, 61, 61);
+        }
+        .secondary{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 1040px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(75, 74, 74);
+        }
+        .secondary_box{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            margin-top: 90px;
+            width: 260px;
+            height: 25px;
+            margin-top: 1067px;
+            margin-left:30px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .graduation_date{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 1105px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .date_picker {
+            position: absolute;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin-top: 1110px;
+      margin-left: 12px;
+      
+    }
+
+
+     .date_picker input {
+      padding: 8px;
+      border: 0.8px solid gray;
+      border-radius: 5px;
+      outline: none;
+      width: 200px;
+      transition: 0.2s;
+    }
+    .date_picker::placeholder{
+        font-weight: lighter;
+        color: #b2b6bb;
+    }
+    
+
+    .date_picker input:focus {
+      border-color: #585b5d;
+      box-shadow: 0 0 3px rgba(105, 119, 133, 0.5);
+    }
+    .schooladd{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 1180px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+
+    .schooladd_box{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            width: 260px;
+            height: 25px;
+            margin-top: 1205px;
+            margin-left:30px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .c_ity{
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            margin-top: 1235px;
+            margin-left: 34px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .schoolprov_box{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            width: 260px;
+            height: 25px;
+            margin-top: 1205px;
+            margin-left:340px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .pr_ov{
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            margin-top: 1235px;
+            margin-left: 340px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .countries{
+            position: absolute;
+            border: 1px solid rgb(164, 156, 156);
+            border-radius: 3px;
+            outline: none;
+            font-weight: 100;
+            color: rgb(104, 104, 104);
+            margin-top: 1270px;
+            margin-left: 32px;
+            width: 260px;
+            height: 28px;
+            
+        }
+        .coubtry:focus{
+            
+            border-color: rgb(98, 94, 94);
+        }
+        .country{
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            margin-top: 1300px;
+            margin-left: 34px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .secondary1{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 1330px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(75, 74, 74);
+        }
+        .secondary_box1{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            margin-top: 90px;
+            width: 260px;
+            height: 25px;
+            margin-top: 1355px;
+            margin-left:30px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .graduation_date1{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 1390px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .date_picker1 {
+            position: absolute;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin-top: 1395px;
+      margin-left: 12px;
+      
+    }
+
+
+     .date_picker1 input {
+      padding: 8px;
+      border: 0.8px solid gray;
+      border-radius: 5px;
+      outline: none;
+      width: 200px;
+      transition: 0.2s;
+    }
+    .date_picker1::placeholder{
+        font-weight: lighter;
+        color: #b2b6bb;
+    }
+    
+
+    .date_picker1 input:focus {
+      border-color: #585b5d;
+      box-shadow: 0 0 3px rgba(105, 119, 133, 0.5);
+    }
+        .schooladd1{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 1465px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+
+    .schooladd_box1{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            width: 260px;
+            height: 25px;
+            margin-top: 1490px;
+            margin-left:30px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .c_ity1{
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            margin-top: 1520px;
+            margin-left: 34px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .schoolprov_box1{
+            position: absolute;
+            z-index: 2;
+            border: 0.8px solid rgb(140, 129, 129);
+            width: 260px;
+            height: 25px;
+            margin-top: 1490px;
+            margin-left:340px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .pr_ov1{
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            margin-top: 1520px;
+            margin-left: 340px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .countries1{
+            position: absolute;
+            border: 1px solid rgb(164, 156, 156);
+            border-radius: 3px;
+            outline: none;
+            font-weight: 100;
+            color: rgb(104, 104, 104);
+            margin-top: 1550px;
+            margin-left: 32px;
+            width: 260px;
+            height: 28px;
+            
+        }
+        .country1{
+            position: absolute;
+            z-index: 2;
+            font-weight: lighter;
+            margin-top: 1580px;
+            margin-left: 34px;
+            font-size: 15px;
+            color: rgb(98, 96, 96);
+        }
+        .line3{
+            position: absolute;
+            z-index: 2;
+            width:590px;
+            border: .1px solid;
+            opacity: 0.3;
+            margin-top: 1630px;
+            margin-left: 30px;
+        }
+        .edu2{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 1605px;
+            margin-left: 32px;
+            font-size: 18px;
+            color: rgb(62, 61, 61);
+        }
+        .campus_choice{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 1650px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(75, 74, 74);
+        }
+        .campus_choice_box{
+            position: absolute;
+            border: 1px solid rgb(164, 156, 156);
+            border-radius: 3px;
+            outline: none;
+            font-weight: 100;
+            color: rgb(104, 104, 104);
+            margin-top: 1675px;
+            margin-left: 32px;
+            width: 260px;
+            height: 28px;
+            
+        }
+        .mode_learning{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 1650px;
+            margin-left: 345px;
+            font-size: 15px;
+            color: rgb(75, 74, 74);
+        }
+        .mode_learning_box{
+            position: absolute;
+            border: 1px solid rgb(164, 156, 156);
+            border-radius: 3px;
+            outline: none;
+            font-weight: 100;
+            color: rgb(104, 104, 104);
+            margin-top: 1675px;
+            margin-left: 345px;
+            width: 260px;
+            height: 28px;
+            
+        }
+        .first_choice{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 1720px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(75, 74, 74);
+        }
+        .first_choice_box{
+            position: absolute;
+            border: 1px solid rgb(164, 156, 156);
+            border-radius: 3px;
+            outline: none;
+            font-weight: 100;
+            color: rgb(104, 104, 104);
+            margin-top: 1745px;
+            margin-left: 32px;
+            width: 570px;
+            height: 28px;
+            
+        }
+        .second_choice{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 1790px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(75, 74, 74);
+        }
+        .second_choice_box{
+            position: absolute;
+            border: 1px solid rgb(164, 156, 156);
+            border-radius: 3px;
+            outline: none;
+            font-weight: 100;
+            color: rgb(104, 104, 104);
+            margin-top: 1813px;
+            margin-left: 32px;
+            width: 570px;
+            height: 28px;
+            
+        }
+        .third_choice{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 1860px;
+            margin-left: 32px;
+            font-size: 15px;
+            color: rgb(75, 74, 74);
+        }
+        .third_choice_box{
+            position: absolute;
+            border: 1px solid rgb(164, 156, 156);
+            border-radius: 3px;
+            outline: none;
+            font-weight: 100;
+            color: rgb(104, 104, 104);
+            margin-top: 1885px;
+            margin-left: 32px;
+            width: 570px;
+            height: 28px;
+            
+        }
+        .upload_file{
+            position: absolute;
+            z-index: 2;
+            margin-top: 1930px;
+            margin-left: 33px;
+        }
+        .submit{
+            position: absolute;
+            margin-left: 450px;
+            margin-top: 290px;
+            width: 120px;
+            border-radius: 3px;
+            border: 1.5px solid rgb(212, 217, 212);
+            font-size: 16px;
+            color: white;
+            font-weight: lighter;
+            background-color: rgb(16, 169, 16);
+            height: 28px;
+        }
+        .submit:hover{
+            opacity: 0.7;
+            background-color: rgb(47, 210, 29);
+
+        }
+        .back{
+            position: absolute;
+            margin-left: 40px;
+            margin-top: 2450px;
+            width: 80px;
+            border-radius: 3px;
+            border: 1.5px solid rgb(208, 206, 206);
+            font-size: 16px;
+            font-weight: lighter;
+            background-color: rgb(216, 218, 214);
+            height: 24px;
+            justify-content: center;
+            text-align: center;
+            font-size: 17px;
+            display: flex;
+            align-items: center;
+
+        }
+        .back:hover{
+            opacity: 0.7;
+            background-color: rgb(223, 223, 223);
+
+        }
+        .free{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 2170px;
+            margin-left: 32px;
+            font-size: 20px;
+            color: rgb(75, 75, 75);
+        }
+
+        .due_date{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 2200px;
+            margin-left: 32px;
+            font-size: 12px;
+            color: rgb(65, 64, 64);
+        }
+        .line4{
+            position: absolute;
+            z-index: 2;
+            width:590px;
+            border: .1px solid gray;
+            opacity: 0.3;
+            margin-top: 2225px;
+            margin-left: 30px;
+        }
+        .method{
+            position: absolute;
+            z-index: 2;
+            font-weight: bold;
+            margin-top: 2240px;
+            margin-left: 32px;
+            font-size: 17px;
+            color: rgb(99, 98, 98);
+        }
+        .the_method{
+            position: absolute;
+            margin-top: 2270px;
+            margin-left: 28px;
+            font-size: 15px;
+            color: rgb(85, 84, 84);
+
+        }
+    
+
+        
+
+        
+
+
+        
+    
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="line4"></div>
+        <Input class="name_box" required>
+        <Input class="name2_box" required>
+        <Input class="name3_box" required>
+        <input class="phone_num" placeholder="+639**********" required>
+        <Input class="email_add" placeholder="ex: myname@gamil.com" required>
+        <Input class="permanent_box" required>
+        <Input class="zip_code" required>
+        <Input class="city" required>
+        <Input class="Province" required >
+        <Input class="emergency" required>
+        <Input class="eme" required>
+        <Input class="rela" required>
+        <Input class="ema_il_box" required>
+        <Input class="number_phone_box" required>
+        <Input class="secondary_box" required>
+        <input class="schooladd_box" required>
+        <input class="schoolprov_box" required>
+        <Input class="secondary_box1" required>
+        <input class="schooladd_box1" required>
+        <input class="schoolprov_box1" required>
+
+        
+        
+
+
+        <p class="online">ONLINE ADMISSION FORM</p>
+        <p class="enter">Enter your admission information below</p>
+        <p class="nam_e">Name</p>
+        <p class="lastname">Last Name</p>
+        <p class="firstname">First Name</p>
+        <p class="middlename">Middle Name</p>
+        <p class="mon_th">Month</p>
+        <p class="da_y">Day</p>
+        <p class="yea_r">Year</p>
+        <p class="b_date">Birth Date</p>
+        <p class="gender">Gender</p>
+        <p class="what_is">what is your citizenship?</p>
+        <p class="pho_ne">Phone</p>
+        <p class="e_mail">E-mail Address</p>
+        <p class="permanent">Mailing Address</p>
+        <p class="perm">Permanent Adress</p>
+        <p class="postal">Postal/Zip code</p>
+        <p class="ci_ty">City</p>
+        <p class="prov">Province</p>
+        <p class="emergen">Emergency Contact</p>
+        <p class="las_ts">Last Name</p>
+        <p class="fir_sts">First Name</p>
+        <p class="relation">Relationship</p>
+        <p class="ema_il">Email</p>
+        <p class="number_phone">Phone Number</p>
+        <p class="speak">Do you speak any laguage other than English?</p>
+        <p class="edu1">Education</p>
+        <p class="secondary">Secondary School Graduated From</p>
+        <p class="graduation_date">Graduation Date</p>
+        <p class="schooladd">School Address</p>
+        <p class="c_ity">City</p>
+        <p class="pr_ov">State/Province</p>
+        <p class="country">Country</p>
+        <p class="secondary1">Secondary School Graduated From</p>
+        <p class="graduation_date1">Graduation Date</p>
+        <p class="schooladd1">School Address</p>
+        <p class="c_ity1">City</p>
+        <p class="pr_ov1">State/Province</p>
+        <p class="country1">Country</p>
+        <p class="edu2">Campus and Course Choices</p>
+        <p class="campus_choice">Choose Campus</p>
+        <p class="mode_learning">Mode of Learning</p>
+        <p class="first_choice">First Choice Course</p>
+        <p class="second_choice">Second Choice Course</p>
+        <p class="third_choice">Third Choice Course</p>
+        <p class="free">Application Free</p>
+        <p class="due_date">Payment is due 3 days prior to the start of the class</p>
+        <p class="method">Payment Method</p>
+
+        <div class="back" onclick="to_home()">Back</div>
+        <Script>
+            function to_home(){
+                window.location.href="index.html";
+            }
+        </Script>
+        
+
+        <div>
+           <label class="radio" >
+  <input type="radio" name="gender" required>
+  <span class="circle"></span>
+  Male
+</label>
+
+<label class="radios" >
+  <input type="radio" name="gender" required>
+  <span class="circles"></span>
+  Female
+</label>
+<label class="radioses">
+  <input type="radio" name="gender" required>
+  <span class="circleses"></span>
+  Others
+</label>
+        </div>
+
+<div>
+  <label class="lingwa" >
+  <input type="radio" name="lingwa" required>
+  <span class="ci"></span>
+  Yes
+</label>
+
+<label class="lingwas" >
+  <input type="radio" name="lingwa" required>
+  <span class="cir"></span>
+  No
+</label>
+
+        </div>
+     <div class="date_picker"><input type="date" id="gradDate"  name="gradDate"  placeholder="mm/dd/yyyy" required>
+        
+    </div>
+    <div>
+        <div class="date_picker1"><input type="date" id="gradDate"  name="gradDate"  placeholder="mm/dd/yyyy" required>
+    </div>
+
+
+        <select class="month" required>
+            <option class="select_month" disabled selected style>Please select a month</option>
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+        </select>
+        <select class="citizen" required>
+            <option value="select_citizenship" disabled selected style>Please select</option>
+            <option>Filipino</option>
+            <option>American</option>
+            <option>Canandian</option>
+            <option>British</option>
+            <option>Australian</option>
+            <option>Japanese</option>
+            <option>Chinese</option>
+            <option>Korean</option>
+            <option>Inidan</option>
+            <option>German</option>
+            <option>French</option>
+            <option>Italian</option>
+            <option>Spanish</option>
+            <option>Brazilian</option>
+            <option>Mexican</option>
+            <option>Russian</option>
+            <option>South Africa</option>
+            <option>Egyptian</option>
+            <option>Saudi Arabian</option>
+            <option>Indonesian</option>
+            <option>Malaysian</option>
+            <option>Thai</option>
+            <option>Vitnamese</option>
+            <option>Singaporean</option>
+            <option>New Zealander</option>
+            <option>Turkish</option>
+            <option>Greek</option>
+            <option>Dutch</option>
+            <option>Swedish</option>
+            <option>Norwegian</option>
+            
+        </select>
+        <select class="day" required>
+            <option class="select_day" disabled selected style>Please select a day</option>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>04</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+        </select>
+        <select class="year" required>
+            <option class="select_year" disabled selected style>Please select a year</option>
+            <option>1990</option>
+            <option>1991</option>
+            <option>1992</option>
+            <option>1993</option>
+            <option>1994</option>
+            <option>1995</option>
+            <option>1996</option>
+            <option>1997</option>
+            <option>1998</option>
+            <option>1999</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+            <option>2006</option>
+            <option>2007</option>
+            <option>2008</option>
+            <option>2009</option>
+            <option>2010</option>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+           
+        </select>
+        <select class="countries" required>
+            <option class="select_country" disabled selected style>Please select</option>
+    <option>Afghanistan</option>
+  <option>Albania</option>
+  <option>Algeria</option>
+  <option>Andorra</option>
+  <option>Angola</option>
+  <option>Argentina</option>
+  <option>Armenia</option>
+  <option>Australia</option>
+  <option>Austria</option>
+  <option>Azerbaijan</option>
+  <option>Bahamas</option>
+  <option>Bahrain</option>
+  <option>Bangladesh</option>
+  <option>Barbados</option>
+  <option>Belarus</option>
+  <option>Belgium</option>
+  <option>Belize</option>
+  <option>Benin</option>
+  <option>Bhutan</option>
+  <option>Bolivia</option>
+  <option>Bosnia </option>
+  <option>Herzegovina</option>
+  <option>Botswana</option>
+  <option>Brazil</option>
+  <option>Brunei</option>
+  <option>Bulgaria</option>
+  <option>Burkina Faso</option>
+  <option>Burundi</option>
+  <option>Cabo Verde</option>
+  <option>Cambodia</option>
+  <option>Cameroon</option>
+  <option>Canada</option>
+  <option>Central African Republic</option>
+  <option>Chad</option>
+  <option>Chile</option>
+  <option>China</option>
+  <option>Colombia</option>
+  <option>Comoros</option>
+  <option>Congo (Congo-Brazzaville)</option>
+  <option>Costa Rica</option>
+  <option>Croatia</option>
+  <option>Cuba</option>
+  <option>Cyprus</option>
+  <option>Czech Republic</option>
+  <option>Democratic Republic of the Congo</option>
+  <option>Denmark</option>
+  <option>Djibouti</option>
+  <option>Dominica</option>
+  <option>Dominican Republic</option>
+  <option>Ecuador</option>
+  <option>Egypt</option>
+  <option>El Salvador</option>
+  <option>Equatorial Guinea</option>
+  <option>Eritrea</option>
+  <option>Estonia</option>
+  <option>Eswatini</option>
+  <option>Ethiopia</option>
+  <option>Fiji</option>
+  <option>Finland</option>
+  <option>France</option>
+  <option>Gabon</option>
+  <option>Gambia</option>
+  <option>Georgia</option>
+  <option>Germany</option>
+  <option>Ghana</option>
+  <option>Greece</option>
+  <option>Grenada</option>
+  <option>Guatemala</option>
+  <option>Guinea</option>
+  <option>Guinea-Bissau</option>
+  <option>Guyana</option>
+  <option>Haiti</option>
+  <option>Honduras</option>
+  <option>Hungary</option>
+  <option>Iceland</option>
+  <option>India</option>
+  <option>Indonesia</option>
+  <option>Iran</option>
+  <option>Iraq</option>
+  <option>Ireland</option>
+  <option>Israel</option>
+  <option>Italy</option>
+  <option>Jamaica</option>
+  <option>Japan</option>
+  <option>Jordan</option>
+  <option>Kazakhstan</option>
+  <option>Kenya</option>
+  <option>Kiribati</option>
+  <option>Kuwait</option>
+  <option>Kyrgyzstan</option>
+  <option>Laos</option>
+  <option>Latvia</option>
+  <option>Lebanon</option>
+  <option>Lesotho</option>
+  <option>Liberia</option>
+  <option>Libya</option>
+  <option>Liechtenstein</option>
+  <option>Lithuania</option>
+  <option>Luxembourg</option>
+  <option>Madagascar</option>
+  <option>Malawi</option>
+  <option>Malaysia</option>
+  <option>Maldives</option>
+  <option>Mali</option>
+  <option>Malta</option>
+  <option>Marshall Islands</option>
+  <option>Mauritania</option>
+  <option>Mauritius</option>
+  <option>Mexico</option>
+  <option>Micronesia</option>
+  <option>Moldova</option>
+  <option>Monaco</option>
+  <option>Mongolia</option>
+  <option>Montenegro</option>
+  <option>Morocco</option>
+  <option>Mozambique</option>
+  <option>Myanmar</option>
+  <option>Namibia</option>
+  <option>Nauru</option>
+  <option>Nepal</option>
+  <option>Netherlands</option>
+  <option>New Zealand</option>
+  <option>Nicaragua</option>
+  <option>Niger</option>
+  <option>Nigeria</option>
+  <option>North Korea</option>
+  <option>North Macedonia</option>
+  <option>Norway</option>
+  <option>Oman</option>
+  <option>Pakistan</option>
+  <option>Palau</option>
+  <option>Panama</option>
+  <option>Papua New Guinea</option>
+  <option>Paraguay</option>
+  <option>Peru</option>
+  <option>Philippines</option>
+  <option>Poland</option>
+  <option>Portugal</option>
+  <option>Qatar</option>
+  <option>Romania</option>
+  <option>Russia</option>
+  <option>Rwanda</option>
+  <option>Saint Kitts and Nevis</option>
+  <option>Saint Lucia</option>
+  <option>Saint Vincent and the Grenadines</option>
+  <option>Samoa</option>
+  <option>San Marino</option>
+  <option>Sao Tome and Principe</option>
+  <option>Saudi Arabia</option>
+  <option>Senegal</option>
+  <option>Serbia</option>
+  <option>Seychelles</option>
+  <option>Sierra Leone</option>
+  <option>Singapore</option>
+  <option>Slovakia</option>
+  <option>Slovenia</option>
+  <option>Solomon Islands</option>
+  <option>Somalia</option>
+  <option>South Africa</option>
+  <option>South Korea</option>
+  <option>South Sudan</option>
+  <option>Spain</option>
+  <option>Sri Lanka</option>
+  <option>Sudan</option>
+  <option>Suriname</option>
+  <option>Sweden</option>
+  <option>Switzerland</option>
+  <option>Syria</option>
+  <option>Taiwan</option>
+  <option>Tajikistan</option>
+  <option>Tanzania</option>
+  <option>Thailand</option>
+  <option>Timor-Leste</option>
+  <option>Togo</option>
+  <option>Tonga</option>
+  <option>Trinidad and Tobago</option>
+  <option>Tunisia</option>
+  <option>Turkey</option>
+  <option>Turkmenistan</option>
+  <option>Tuvalu</option>
+  <option>Uganda</option>
+  <option>Ukraine</option>
+  <option>United Arab Emirates</option>
+  <option>United Kingdom</option>
+  <option>United States</option>
+  <option>Uruguay</option>
+  <option>Uzbekistan</option>
+  <option>Vanuatu</option>
+  <option>Vatican City</option>
+  <option>Venezuela</option>
+  <option>Vietnam</option>
+  <option>Yemen</option>
+  <option>Zambia</option>
+  <option>Zimbabwe</option>
+        </select>
+        <select class="countries1" required>
+<option class="select_country1" disabled selected style>Please select</option>
+    <option>Afghanistan</option>
+  <option>Albania</option>
+  <option>Algeria</option>
+  <option>Andorra</option>
+  <option>Angola</option>
+  <option>Argentina</option>
+  <option>Armenia</option>
+  <option>Australia</option>
+  <option>Austria</option>
+  <option>Azerbaijan</option>
+  <option>Bahamas</option>
+  <option>Bahrain</option>
+  <option>Bangladesh</option>
+  <option>Barbados</option>
+  <option>Belarus</option>
+  <option>Belgium</option>
+  <option>Belize</option>
+  <option>Benin</option>
+  <option>Bhutan</option>
+  <option>Bolivia</option>
+  <option>Bosnia </option>
+  <option>Herzegovina</option>
+  <option>Botswana</option>
+  <option>Brazil</option>
+  <option>Brunei</option>
+  <option>Bulgaria</option>
+  <option>Burkina Faso</option>
+  <option>Burundi</option>
+  <option>Cabo Verde</option>
+  <option>Cambodia</option>
+  <option>Cameroon</option>
+  <option>Canada</option>
+  <option>Central African Republic</option>
+  <option>Chad</option>
+  <option>Chile</option>
+  <option>China</option>
+  <option>Colombia</option>
+  <option>Comoros</option>
+  <option>Congo (Congo-Brazzaville)</option>
+  <option>Costa Rica</option>
+  <option>Croatia</option>
+  <option>Cuba</option>
+  <option>Cyprus</option>
+  <option>Czech Republic</option>
+  <option>Democratic Republic of the Congo</option>
+  <option>Denmark</option>
+  <option>Djibouti</option>
+  <option>Dominica</option>
+  <option>Dominican Republic</option>
+  <option>Ecuador</option>
+  <option>Egypt</option>
+  <option>El Salvador</option>
+  <option>Equatorial Guinea</option>
+  <option>Eritrea</option>
+  <option>Estonia</option>
+  <option>Eswatini</option>
+  <option>Ethiopia</option>
+  <option>Fiji</option>
+  <option>Finland</option>
+  <option>France</option>
+  <option>Gabon</option>
+  <option>Gambia</option>
+  <option>Georgia</option>
+  <option>Germany</option>
+  <option>Ghana</option>
+  <option>Greece</option>
+  <option>Grenada</option>
+  <option>Guatemala</option>
+  <option>Guinea</option>
+  <option>Guinea-Bissau</option>
+  <option>Guyana</option>
+  <option>Haiti</option>
+  <option>Honduras</option>
+  <option>Hungary</option>
+  <option>Iceland</option>
+  <option>India</option>
+  <option>Indonesia</option>
+  <option>Iran</option>
+  <option>Iraq</option>
+  <option>Ireland</option>
+  <option>Israel</option>
+  <option>Italy</option>
+  <option>Jamaica</option>
+  <option>Japan</option>
+  <option>Jordan</option>
+  <option>Kazakhstan</option>
+  <option>Kenya</option>
+  <option>Kiribati</option>
+  <option>Kuwait</option>
+  <option>Kyrgyzstan</option>
+  <option>Laos</option>
+  <option>Latvia</option>
+  <option>Lebanon</option>
+  <option>Lesotho</option>
+  <option>Liberia</option>
+  <option>Libya</option>
+  <option>Liechtenstein</option>
+  <option>Lithuania</option>
+  <option>Luxembourg</option>
+  <option>Madagascar</option>
+  <option>Malawi</option>
+  <option>Malaysia</option>
+  <option>Maldives</option>
+  <option>Mali</option>
+  <option>Malta</option>
+  <option>Marshall Islands</option>
+  <option>Mauritania</option>
+  <option>Mauritius</option>
+  <option>Mexico</option>
+  <option>Micronesia</option>
+  <option>Moldova</option>
+  <option>Monaco</option>
+  <option>Mongolia</option>
+  <option>Montenegro</option>
+  <option>Morocco</option>
+  <option>Mozambique</option>
+  <option>Myanmar</option>
+  <option>Namibia</option>
+  <option>Nauru</option>
+  <option>Nepal</option>
+  <option>Netherlands</option>
+  <option>New Zealand</option>
+  <option>Nicaragua</option>
+  <option>Niger</option>
+  <option>Nigeria</option>
+  <option>North Korea</option>
+  <option>North Macedonia</option>
+  <option>Norway</option>
+  <option>Oman</option>
+  <option>Pakistan</option>
+  <option>Palau</option>
+  <option>Panama</option>
+  <option>Papua New Guinea</option>
+  <option>Paraguay</option>
+  <option>Peru</option>
+  <option>Philippines</option>
+  <option>Poland</option>
+  <option>Portugal</option>
+  <option>Qatar</option>
+  <option>Romania</option>
+  <option>Russia</option>
+  <option>Rwanda</option>
+  <option>Saint Kitts and Nevis</option>
+  <option>Saint Lucia</option>
+  <option>Saint Vincent and the Grenadines</option>
+  <option>Samoa</option>
+  <option>San Marino</option>
+  <option>Sao Tome and Principe</option>
+  <option>Saudi Arabia</option>
+  <option>Senegal</option>
+  <option>Serbia</option>
+  <option>Seychelles</option>
+  <option>Sierra Leone</option>
+  <option>Singapore</option>
+  <option>Slovakia</option>
+  <option>Slovenia</option>
+  <option>Solomon Islands</option>
+  <option>Somalia</option>
+  <option>South Africa</option>
+  <option>South Korea</option>
+  <option>South Sudan</option>
+  <option>Spain</option>
+  <option>Sri Lanka</option>
+  <option>Sudan</option>
+  <option>Suriname</option>
+  <option>Sweden</option>
+  <option>Switzerland</option>
+  <option>Syria</option>
+  <option>Taiwan</option>
+  <option>Tajikistan</option>
+  <option>Tanzania</option>
+  <option>Thailand</option>
+  <option>Timor-Leste</option>
+  <option>Togo</option>
+  <option>Tonga</option>
+  <option>Trinidad and Tobago</option>
+  <option>Tunisia</option>
+  <option>Turkey</option>
+  <option>Turkmenistan</option>
+  <option>Tuvalu</option>
+  <option>Uganda</option>
+  <option>Ukraine</option>
+  <option>United Arab Emirates</option>
+  <option>United Kingdom</option>
+  <option>United States</option>
+  <option>Uruguay</option>
+  <option>Uzbekistan</option>
+  <option>Vanuatu</option>
+  <option>Vatican City</option>
+  <option>Venezuela</option>
+  <option>Vietnam</option>
+  <option>Yemen</option>
+  <option>Zambia</option>
+  <option>Zimbabwe</option>
+        </select>
+    
+  <select class="campus_choice_box" required>
+    <option class="select_country1" disabled selected style>Please select</option>
+    <option>Main Campus</option>
+    <option>Satellite Campus</option>
+  </select>
+  <select class="mode_learning_box" required>
+    <option class="select mode" disabled selected style>Please select</option>
+    <option>Onsite</option>
+    <option>Online</option>
+    <option>Blended</option>
+    <option>Flex</option>
+  </select>
+
+
+<select class="first_choice_box" required>
+<option class="select_course" disabled selected style>Please select</option>
+<option>BS Criminology</option>
+<option>AB Communication</option>
+<option>AB Political Science</option>
+<option>BSED-Science</option>
+<option>BSED-Social Studies</option>
+<option>BSED-English</option>
+<option>BSED-Mathematics</option>
+<option>Bachelor in Elementary Education</option>
+<option>BS Accountancy</option>
+<option>BS Accounting Information System</option>
+<option>BS Management Accounting</option>
+<option>BS Hospitality Management</option>
+<option>BS Marketing Management</option>
+<option>BS Business Administration-Financial Management</option>
+<option>BS Management</option>
+<option>BS Architecture</option>
+<option>BS Civil Engineering</option>
+<option>BS Computer Engineering</option>
+<option>BS Electronics Engineering</option>
+<option>BS Electrical Engineering</option>
+<option>BS Mechanical Engineering</option>
+<option>BS Nursing</option>
+<option>BS Medical Laboratory Science</option>
+<option>BS Psychology</option>
+<option>BS Pharmacy</option>
+<option>BS Information Technology</option>
+<option>BS Computer Science</option>
+<option>BS Tourism Management</option>
+<option>BS Entrepreneurship</option>
+<option>AB English Language</option>
+  </select>
+
+  <select class="second_choice_box" required>
+<option class="select_course" disabled selected style>Please select</option>
+<option>BS Criminology</option>
+<option>AB Communication</option>
+<option>AB Political Science</option>
+<option>BSED-Science</option>
+<option>BSED-Social Studies</option>
+<option>BSED-English</option>
+<option>BSED-Mathematics</option>
+<option>Bachelor in Elementary Education</option>
+<option>BS Accountancy</option>
+<option>BS Accounting Information System</option>
+<option>BS Management Accounting</option>
+<option>BS Hospitality Management</option>
+<option>BS Marketing Management</option>
+<option>BS Business Administration-Financial Management</option>
+<option>BS Management</option>
+<option>BS Architecture</option>
+<option>BS Civil Engineering</option>
+<option>BS Computer Engineering</option>
+<option>BS Electronics Engineering</option>
+<option>BS Electrical Engineering</option>
+<option>BS Mechanical Engineering</option>
+<option>BS Nursing</option>
+<option>BS Medical Laboratory Science</option>
+<option>BS Psychology</option>
+<option>BS Pharmacy</option>
+<option>BS Information Technology</option>
+<option>BS Computer Science</option>
+<option>BS Tourism Management</option>
+<option>BS Entrepreneurship</option>
+<option>AB English Language</option>
+  </select>
+
+  <select class="third_choice_box" required>
+<option class="select_course" disabled selected style>Please select</option>
+<option>BS Criminology</option>
+<option>AB Communication</option>
+<option>AB Political Science</option>
+<option>BSED-Science</option>
+<option>BSED-Social Studies</option>
+<option>BSED-English</option>
+<option>BSED-Mathematics</option>
+<option>Bachelor in Elementary Education</option>
+<option>BS Accountancy</option>
+<option>BS Accounting Information System</option>
+<option>BS Management Accounting</option>
+<option>BS Hospitality Management</option>
+<option>BS Marketing Management</option>
+<option>BS Business Administration-Financial Management</option>
+<option>BS Management</option>
+<option>BS Architecture</option>
+<option>BS Civil Engineering</option>
+<option>BS Computer Engineering</option>
+<option>BS Electronics Engineering</option>
+<option>BS Electrical Engineering</option>
+<option>BS Mechanical Engineering</option>
+<option>BS Nursing</option>
+<option>BS Medical Laboratory Science</option>
+<option>BS Psychology</option>
+<option>BS Pharmacy</option>
+<option>BS Information Technology</option>
+<option>BS Computer Science</option>
+<option>BS Tourism Management</option>
+<option>BS Entrepreneurship</option>
+<option>AB English Language</option>
+  </select>
+
+  <form action="upload.php" method="POST" enctype="multipart/form-data" class="upload_file">
+  
+  <label>Upload Report Card:</label><br>
+  <input type="file" name="report_card" required><br><br>
+
+  <label>Upload Birth Certificate:</label><br>
+  <input type="file" name="birth_certificate" required><br><br>
+
+  <label>Upload Valid ID:</label><br>
+  <input type="file" name="valid_id" required><br><br>
+
+  <label>Upload 2x2 Photo:</label><br>
+  <input type="file" name="photo" accept="image/*" required><br><br>
+
+  <button type="submit" class="submit" onclick="feedback()">Submit &nbsp;Form</button>
+   
+  <Script>
+    function feedback(){
+        window.location.href="feed_back.html";
+    }
+  </Script>
+</form>
+
+<div class="the_method">
+
+  <label>
+    <input type="radio" name="payment" value="Bank Transfer" required>
+    Bank Transfer
+  </label>
+  <br><br>
+
+  <label>
+    <input type="radio" name="payment" value="Online Payment">
+    Online Payment
+  </label>
+  <br><br>
+
+  <label>
+    <input type="radio" name="payment" value="Cash Only">
+    Cash Only
+  </label>
+</div>
+
+        <img src="ru_logo.jpg"
+        class="ru_logo">
+        <img src="ru_logo.jpg"
+        class="ru_logo1">
+
+    </div>
+
+
+  
+    
+    
+</body>
+</html>
