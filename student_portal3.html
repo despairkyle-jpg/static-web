@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html la
+ng="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redmont University</title>
+    <link rel="icon" href="logo2.png">
+    <style>
+        .box{
+            border-radius: 4px;
+            margin-left: 20px;
+            z-index: 1;
+            margin-top: 2px;
+            width: 1100px;
+            height: 570px;
+            background-color: rgb(240, 244, 244);
+            border: lightblue;
+            opacity: 0.9;
+            position: absolute;
+            box-shadow:
+            5px 5px 10px rgb(140, 139, 139),
+            -5px 5px 10px rgb(76, 75, 75);
+        }
+        .box2{
+            border-radius: 4px;
+            margin-left: 20px;
+            margin-top: 2px;
+            z-index: 2;
+            position: absolute;
+            width: 1100px;
+            height: 400px;
+            opacity: 0.9;
+            background-color: rgb(11, 54, 54);
+
+        }
+        .box3{
+    
+            margin-left: 20px;
+            margin-top: 33px;
+            z-index: 3;
+            position: absolute;
+            width: 1100px;
+            height: 40px;
+            opacity: 0.9;
+            background-color: rgb(233, 239, 239);
+        }
+        .email-icon{
+            z-index: 2;
+            position: absolute;
+            width: 18px;
+            margin-top: 10px;
+            margin-left: 150px;
+            cursor: pointer;
+            
+        }
+        .email{
+            z-index: 2;
+            position: absolute;
+            font-size: 13px;
+            margin-top: 10.5px;
+            margin-left: 170px;
+            cursor: pointer;
+            color: rgb(142, 142, 129);
+            
+        }
+        .email:hover{
+            color: rgb(167, 160, 151);
+        }
+        .call{
+            z-index: 2;
+            position: absolute;
+            width: 14px;
+            margin-top: 12px;
+            margin-left: 300px;
+            cursor: pointer;
+        }
+        .number{
+            z-index: 2;
+            position: absolute;
+            font-size: 12.5px;
+            margin-top: 12px;
+            margin-left: 320px;
+            cursor: pointer;
+            color: rgb(142, 142, 129);
+            
+        }
+        .alumni{
+            z-index: 2;
+            position: absolute;
+            font-size: 12.5px;
+            margin-top: 12px;
+            margin-left: 720px;
+            cursor: pointer;
+            color: rgb(163, 163, 151);
+            
+        }
+        .alumni:hover{
+            color: aliceblue;
+        }
+        
+        .calendar{
+            z-index: 2;
+            position: absolute;
+            font-size: 12.5px;
+            margin-top: 12px;
+            margin-left: 790px;
+            cursor: pointer;
+            color: rgb(163, 163, 151);
+            
+        }
+        .calendar:hover{
+            color: aliceblue;
+        }
+        .portal{
+            z-index: 2;
+            position: absolute;
+            font-size: 12.5px;
+            margin-top: 12px;
+            margin-left: 864px;
+            cursor: pointer;
+            color: rgb(163, 163, 151);
+            border-bottom: solid 3px white;
+            
+        }
+        .portal:hover{
+            color: aliceblue;
+        }
+        .support{
+            z-index: 2;
+            position: absolute;
+            font-size: 12.5px;
+            margin-top: 12px;
+            margin-left: 920px;
+            cursor: pointer;
+            color: rgb(163, 163, 151);
+            
+        }
+        .support:hover{
+            color: aliceblue;
+        }
+
+        .redmont{
+            z-index: 4;
+            position: absolute;
+            margin-top: 42px;
+            margin-left: 120px;
+            font-size:19px;
+            cursor: pointer;
+            
+        }
+        .university{
+            z-index: 4;
+            position: absolute;
+            margin-top: 44px;
+            margin-left: 200px;
+            font-size:17px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+
+         .home{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 355px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+            
+            
+            
+        }
+        .home:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+           
+           
+            
+        }
+         .pages{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 425px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .pages:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+        }
+         .acads{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 490px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .acads:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+        }
+        .ads{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 585px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .ads:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+        }
+        .course{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 680px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .course:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+
+        }
+        .news{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 760px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .news:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+        }
+        .uni{
+            z-index: 4;
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 825px;
+            font-size:15px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .uni:hover{
+            opacity: 0.8;
+            background-color: rgb(189, 195, 195);
+        }
+        .search_bar{
+            position: absolute;
+            z-index: 3;
+            width: 145px;
+            height: 15px;
+            border-radius: 10px;
+            margin-top:44px ;
+            margin-left: 940px;
+        }
+        .search{
+            z-index: 4;
+            position: absolute;
+            width: 18px;
+            margin-top:45px ;
+            margin-left:1070px;
+            cursor: pointer;
+            
+        }
+        .university-pic{
+            opacity: 0.3;
+            filter: blur(1px);
+            position: absolute;
+            z-index: 3;
+            width: 400px;
+            border-radius: 10px;
+            height: 300px;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+         .model{
+            opacity: 0.6;
+            position: absolute;
+            z-index: 3;
+            width: 550px;
+            height: 327.9px;
+            margin-top: 73.5px;
+            margin-left: 569.5px;
+        }
+         .thebest{
+            z-index: 4;
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 260px;
+            font-size:13px;
+            color: rgb(183, 169, 150);
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .redmon{
+            z-index: 4;
+            position: absolute;
+            margin-top: 230px;
+            margin-left: 260px;
+            font-size:28px;
+            color: rgb(228, 221, 211);
+            font-weight:bold;
+            cursor: pointer;
+             
+        }
+         .univer{
+            z-index: 4;
+            position: absolute;
+            margin-top: 232px;
+            margin-left: 377px;
+            font-size:26px;
+            color: rgb(228, 221, 211);
+            font-weight: lighter;
+            cursor: pointer;
+             
+        }
+        .tour{
+            position: absolute;
+            z-index: 3;
+            margin-top: 280px;
+            margin-left: 260px;
+            background-color: beige;
+            border-radius: 5px;
+            width:90px;
+            height: 25px;
+            cursor: pointer;
+            
+        }
+        .tour:hover{
+            opacity: 0.7;
+            margin-top: 278px;
+
+        }
+        .box4{
+    
+            margin-left: 150px;
+            margin-top: 380px;
+            z-index: 5;
+            position: absolute;
+            width: 800px;
+            height: 80px;
+            border-radius: 10px;
+            background-color: rgb(233, 239, 239);
+        }
+       
+        #logo{
+            z-index: 3;
+            position: absolute;
+            width: 23px;
+            margin-top: 40px;
+            margin-left: 90px;
+            cursor: pointer; 
+            transition: 0.3s;
+            transform-origin: top;
+
+        }
+        .big{
+            transform:scale(20);
+            background-color: azure;
+            border-radius: solid;
+            border-radius: 50px;
+            margin-top: 100px;
+            margin-left: 150px;
+        }
+        .univ{
+            z-index: 5;
+            position: absolute;
+            margin-top: 405px;
+            margin-left: 213px;
+            font-size:14px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .logo2{
+            z-index: 5;
+            position: absolute;
+            width: 23px;
+            margin-top: 398px;
+            margin-left: 180px;
+            cursor: pointer; 
+        }
+        .grad{
+            z-index: 5;
+            position: absolute;
+            width: 23px;
+            margin-top: 401px;
+            margin-left: 380px;
+            cursor: pointer; 
+        }
+         .graduate{
+            z-index: 5;
+            position: absolute;
+            margin-top: 405px;
+            margin-left: 410px;
+            font-size:14px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .athlete{
+            z-index: 5;
+            position: absolute;
+            width: 23px;
+            margin-top: 398px;
+            margin-left: 580px;
+            cursor: pointer; 
+        }
+         .athl{
+            z-index: 5;
+            position: absolute;
+            margin-top: 405px;
+            margin-left: 610px;
+            font-size:14px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .social{
+            z-index: 5;
+            position: absolute;
+            width: 23px;
+            margin-top: 398px;
+            margin-left: 780px;
+            cursor: pointer; 
+        }
+         .socia{
+            z-index: 5;
+            position: absolute;
+            margin-top: 405px;
+            margin-left: 810px;
+            font-size:14px;
+            font-weight: lighter;
+            cursor: pointer;
+            
+        }
+        .law{
+            position: absolute;
+            z-index: 6;
+            width: 300px;
+            height: 133px;
+            margin-top: 438.9px;
+            margin-left: 150px;
+            opacity: 0.9;
+        }
+         .melborn{
+            position: absolute;
+            z-index: 6;
+            width: 400px;
+            height: 133px;
+            margin-left: 450px;
+            margin-top: 438.9px;
+            opacity: 0.2;
+        }
+        .box5{
+    
+            margin-left: 450px;
+            margin-top: 438.9px;
+            z-index: 5;
+            position: absolute;
+            width: 400px;
+            height: 133px;
+            opacity: 0.9;
+            background-color: rgb(22, 53, 53);
+        }
+        .apply{
+            position: absolute;
+            z-index: 6;
+            color: rgb(222, 234, 234);
+            margin-left:40px;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .sy{
+            position: absolute;
+            z-index: 6;
+            color: rgb(130, 176, 176);
+            margin-left:40px;
+            margin-top: 35px;
+            font-size: 9px;
+        }
+        .quote{
+            position: absolute;
+            z-index: 6;
+            color: rgb(178, 199, 199);
+            margin-left:40px;
+            margin-top: 60px;
+            font-size: 15px;
+        }
+        .autor{
+            position: absolute;
+            z-index: 6;
+            color: rgb(171, 200, 200);
+            margin-left:170px;
+            margin-top: 94px;
+            font-size: 13px;
+        }
+        .applynow{
+            position: absolute;
+            z-index: 6;
+            width: 120px;
+            height: 30px;
+            background-color: rgb(165, 241, 174);
+            margin-top: 500px;
+            margin-left: 800px;
+            border-radius: 10px;
+            animation: glow 1s infinite alternate;
+
+
+        }
+        @keyframes glow{
+            form{box-shadow: 0 0 5px rgb(39, 122, 108);
+            }
+            to{
+                box-shadow: 0 0 20px rgb(120, 215, 115);
+            }
+    }
+        .applynow:hover{
+            opacity: 0.7;
+            margin-top: 498px;
+        }
+        .portal_box{
+            position: absolute;
+            border:solid rgb(146, 143, 143);
+            width: 1100px;
+            height: 499px;
+            z-index: 7;
+            border-radius: 4px;
+            margin-left: 20px;
+            margin-top: 73px;
+            background-color: rgb(205, 215, 213);  
+        }
+        .melbornbg{
+            position: absolute;
+            width: 950px;
+            height: 445px;
+            z-index: 7;
+            border-radius: 10px;
+            margin-left: 100px;
+            margin-top: 115px;
+            background-color: rgb(240, 244, 244);
+        }
+        .portal_icon{
+            position: absolute;
+            z-index: 7;
+            width: 40px;
+            height: 35px;
+            margin-top: 80px;
+            margin-left:40px;
+        }
+        .Portal{
+            z-index: 7;
+            position: absolute;
+            margin-top: 82px;
+            margin-left: 100px;
+            font-size:21px;
+            cursor: pointer;
+            
+        }
+        .grace{
+            position: absolute;
+            z-index: 9;
+            width: 110px;
+            height: 110px;
+            border-radius: 5px;
+            margin-top: 120px;
+            margin-left: 110px;
+            box-shadow:
+            5px 5px 10px rgb(161, 155, 155),
+            -5px 5px 10px rgb(113, 110, 110);
+        }
+        .details_box{
+            position: absolute;
+            z-index: 10;
+            width: 750px;
+            height: 295px;
+            border: solid rgb(228, 222, 222);
+            margin-top: 120px;
+            margin-left: 250px;
+            background-color: rgb(252, 253, 253);
+            box-shadow:
+            5px 5px 10px rgb(213, 209, 209),
+            -5px 5px 10px rgb(209, 199, 199);
+            
+            
+        }
+        .subs{
+            position: absolute;
+            z-index: 10;
+            width: 295px;
+            height: 210px;
+            border: solid rgb(228, 222, 222);
+            margin-top: 190px;
+            margin-left: 690px;
+            background-color: rgb(232, 232, 230);
+            box-shadow:
+            5px 5px 10px rgb(213, 209, 209),
+            -5px 5px 10px rgb(209, 199, 199);
+            
+            
+        }
+        .name{
+            position: absolute;
+            z-index: 10;
+            margin-top: 130px;
+            margin-left: 260px;
+            font-size: 17px;
+        }
+        .bd{
+            position: absolute;
+            z-index: 10;
+            margin-top: 165px;
+            margin-left: 260px;
+            font-size: 17px;
+        }
+        .nn{
+            position: absolute;
+            z-index: 10;
+            margin-top: 200px;
+            margin-left: 260px;
+            font-size: 17px;
+        }
+        .gender{
+            position: absolute;
+            z-index: 10;
+            margin-top: 235px;
+            margin-left: 260px;
+            font-size: 17px;
+        }
+        .natio{
+            position: absolute;
+            z-index: 10;
+            margin-top: 270px;
+            margin-left: 260px;
+            font-size: 17px;
+        }
+        .grade{
+            position: absolute;
+            z-index: 10;
+            margin-top: 305px;
+            margin-left: 260px;
+            font-size: 17px;
+        }
+        .teacher{
+            position: absolute;
+            z-index: 10;
+            margin-top: 340px;
+            margin-left: 260px;
+            font-size: 17px;
+        }
+        .enroll{
+            position: absolute;
+            z-index: 10;
+            margin-top: 375px;
+            margin-left: 260px;
+            font-size: 17px;
+        }
+        .box1{
+            position: absolute;
+            z-index: 10;
+            background-color: rgb(232, 232, 230);
+            width: 270px;
+            height: 27px;
+            opacity: 0.7;
+            border: solid gray;
+            margin-top: 127px;
+            margin-left: 400px;
+            border-radius: 3px;
+        }
+        .na{
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 5px;
+        }
+        .bdate{
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 5px;
+        }
+        .nname{
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 5px;
+        }
+        .gen{
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 5px;
+        }
+        .nationa{
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 5px;
+        }
+        .year{
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 5px;
+        }
+        .teach{
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 5px;
+        }
+        .enrolldate{
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 5px;
+        }
+        .boxs2{
+            position: absolute;
+            z-index: 10;
+            background-color: rgb(232, 232, 230);
+            width: 270px;
+            height: 27px;
+            opacity: 0.7;
+            border: solid gray;
+            margin-top: 164px;
+            margin-left: 400px;
+            border-radius: 3px;
+        }
+
+        .boxs3{
+            position: absolute;
+            z-index: 10;
+            background-color: rgb(232, 232, 230);
+            width: 270px;
+            height: 27px;
+            opacity: 0.7;
+            border: solid gray;
+            margin-top: 198px;
+            margin-left: 400px;
+            border-radius: 3px;
+        }
+        .box4{
+            position: absolute;
+            z-index: 10;
+            background-color: rgb(232, 232, 230);
+            width: 270px;
+            height: 27px;
+            opacity: 0.7;
+            border: solid gray;
+            margin-top: 233px;
+            margin-left: 400px;
+            border-radius: 3px;
+        }
+        .box5{
+            position: absolute;
+            z-index: 10;
+            background-color: rgb(232, 232, 230);
+            width: 270px;
+            height: 27px;
+            opacity: 0.7;
+            border: solid gray;
+            margin-top: 266px;
+            margin-left: 400px;
+            border-radius: 3px;
+        }
+        .box6{
+            position: absolute;
+            z-index: 10;
+            background-color: rgb(232, 232, 230);
+            width: 270px;
+            height: 27px;
+            opacity: 0.7;
+            border: solid gray;
+            margin-top: 302px;
+            margin-left: 400px;
+            border-radius: 3px;
+        }
+        .box7{
+            position: absolute;
+            z-index: 10;
+            background-color: rgb(232, 232, 230);
+            width: 270px;
+            height: 27px;
+            opacity: 0.7;
+            border: solid gray;
+            margin-top: 337px;
+            margin-left: 400px;
+            border-radius: 3px;
+        }
+        .box8{
+            position: absolute;
+            z-index: 10;
+            background-color: rgb(232, 232, 230);
+            width: 270px;
+            height: 27px;
+            opacity: 0.7;
+            border: solid gray;
+            margin-top: 372px;
+            margin-left: 400px;
+            border-radius: 3px;
+        }
+        .status{
+            position: absolute;
+            z-index: 10;
+            margin-top: 129px;
+            margin-left: 700px;
+            font-size: 17px;
+        }
+        .subjects{
+           position: absolute;
+            z-index: 10;
+            margin-top: 167px;
+            margin-left: 700px;
+            font-size: 17px; 
+        }
+        ._008{
+            position: absolute;
+            z-index: 10;
+            font-size: 14px;
+            margin-top: 200px;
+            margin-left: 700px;
+            border-bottom: solid rgb(174, 157, 157);
+
+        }
+        ._048{
+            position: absolute;
+            position: absolute;
+            z-index: 10;
+            font-size: 14px;
+            margin-top: 225px;
+            margin-left: 700px;
+            border-bottom: solid rgb(174, 157, 157);
+        }
+        ._002{
+            position: absolute;
+            position: absolute;
+            z-index: 10;
+            font-size: 14px;
+            margin-top: 250px;
+            margin-left: 700px;
+            border-bottom: solid rgb(174, 157, 157);
+        }
+        ._399{
+            position: absolute;
+            position: absolute;
+            z-index: 10;
+            font-size: 14px;
+            margin-top: 275px;
+            margin-left: 700px;
+            border-bottom: solid rgb(174, 157, 157);
+        }
+        ._005{
+            position: absolute;
+            position: absolute;
+            z-index: 10;
+            font-size: 14px;
+            margin-top: 300px;
+            margin-left: 700px;
+            border-bottom: solid rgb(174, 157, 157);
+        }
+        ._186{
+            position: absolute;
+            position: absolute;
+            z-index: 10;
+            font-size: 14px;
+            margin-top: 325px;
+            margin-left: 700px;
+            border-bottom: solid rgb(174, 157, 157);
+        }
+        ._031{
+            position: absolute;
+            position: absolute;
+            z-index: 10;
+            font-size: 14px;
+            margin-top: 350px;
+            margin-left: 700px;
+            border-bottom: solid rgb(174, 157, 157);
+        }
+        ._022{
+            position: absolute;
+            position: absolute;
+            z-index: 10;
+            font-size: 14px;
+            margin-top: 375px;
+            margin-left: 700px;
+            border-bottom: solid rgb(174, 157, 157);
+        }
+        .home_address{
+            position: absolute;
+            z-index: 10;
+            width: 750px;
+            height: 128px;
+            border: solid rgb(228, 222, 222);
+            margin-top: 425px;
+            margin-left: 250px;
+            background-color: rgb(252, 253, 253);
+            box-shadow:
+            5px 5px 10px rgb(213, 209, 209),
+            -5px 5px 10px rgb(209, 199, 199);
+            
+            
+        }
+        .home_add{
+            position: absolute;
+            z-index: 10;
+            margin-top: 432px;
+            margin-left: 260px;
+            font-size: 17px;
+        }
+        .city{
+            position: absolute;
+            z-index: 10;
+            margin-top: 462px;
+            margin-left: 260px;
+            font-size: 17px;
+        }
+        .grace_email{
+            position: absolute;
+            z-index: 10;
+            margin-top: 432px;
+            margin-left: 650px;
+            font-size: 17px;
+        }
+        .grace_number{
+            position: absolute;
+            z-index: 10;
+            margin-top: 460px;
+            margin-left: 650px;
+            font-size: 17px;
+        }
+        
+
+        .zip{
+            position: absolute;
+            z-index: 10;
+            margin-top: 492px;
+            margin-left: 650px;
+            font-size: 17px;
+        }
+        .province{
+            position: absolute;
+            z-index: 10;
+            margin-top: 492px;
+            margin-left: 260px;
+            font-size: 17px;
+        }
+        .country{
+            position: absolute;
+            z-index: 10;
+            margin-top: 522px;
+            margin-left: 260px;
+            font-size: 17px;
+        }
+        .box9{
+            position: absolute;
+            z-index: 10;
+            background-color: rgb(232, 232, 230);
+            width: 230px;
+            height: 25px;
+            opacity: 0.7;
+            border: solid gray;
+            margin-top: 430px;
+            margin-left: 400px;
+            border-radius: 3px;
+        }
+        .box10{
+            position: absolute;
+            z-index: 10;
+            background-color: rgb(232, 232, 230);
+            width: 230px;
+            height: 25px;
+            opacity: 0.7;
+            border: solid gray;
+            margin-top: 460px;
+            margin-left: 400px;
+            border-radius: 3px;
+        }
+        .box10_1{
+            position: absolute;
+            z-index: 10;
+            background-color: rgb(232, 232, 230);
+            width: 70px;
+            height: 25px;
+            opacity: 0.7;
+            border: solid gray;
+            margin-top: 492px;
+            margin-left: 767px;
+            border-radius: 3px;
+        }
+
+        .box11{
+            position: absolute;
+            z-index: 10;
+            background-color: rgb(232, 232, 230);
+            width: 230px;
+            height: 25px;
+            opacity: 0.7;
+            border: solid gray;
+            margin-top: 490px;
+            margin-left: 400px;
+            border-radius: 3px;
+        }
+        .box12{
+            position: absolute;
+            z-index: 10;
+            background-color: rgb(232, 232, 230);
+            width: 230px;
+            height: 25px;
+            opacity: 0.7;
+            border: solid gray;
+            margin-top: 520px;
+            margin-left: 400px;
+            border-radius: 3px;
+        }
+        .box13{
+            position: absolute;
+            z-index: 10;
+            background-color: rgb(232, 232, 230);
+            width: 220px;
+            height: 25px;
+            opacity: 0.7;
+            border: solid gray;
+            margin-top: 430px;
+            margin-left: 767px;
+            border-radius: 3px;
+        }
+        .box14{
+            position: absolute;
+            z-index: 10;
+            background-color: rgb(232, 232, 230);
+            width: 220px;
+            height: 25px;
+            opacity: 0.7;
+            border: solid gray;
+            margin-top: 460px;
+            margin-left: 767px;
+            border-radius: 3px;
+        }
+
+        
+        .obrero{
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        .ilo{
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        ._5000{
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        .iloilo{
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        .phili{
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        .grace_num{
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        .grace_em{
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+
+        .arrowright{
+            position: absolute;
+            z-index: 10;
+            width: 40px;
+            height: 40px;
+            margin-top: 314px;
+            margin-left: 1007px;
+            cursor: pointer;
+            background-color: beige;
+            border:solid #7b633f;
+            border-radius: 20px;
+        }
+        .arrowleft{
+            position: absolute;
+            z-index: 10;
+            width: 40px;
+            height: 40px;
+            margin-top: 314px;
+            margin-left: 102px;
+            cursor: pointer;
+            background-color: beige;
+            border:solid #7b633f;
+            border-radius: 20px;
+        }
+        .arrowright:hover{
+            background-color: rgb(227, 228, 229);
+            opacity: 0.8;
+        }
+        .arrowleft:hover{
+            background-color: rgb(227, 228, 229);
+            opacity: 0.8;
+        }
+        
+        .indicator1{
+            position: absolute;
+            z-index: 8;
+            width: 15px;
+            height: 15px;
+            border-radius: 9px;
+            border: solid black;
+            margin-top: 75px;
+            margin-left: 490px;
+            cursor: pointer;
+
+
+        }
+        .indicator2{
+            position: absolute;
+            z-index: 8;
+            width: 15px;
+            height: 15px;
+            border-radius: 9px;
+            border: solid black;
+            margin-top: 75px;
+            margin-left: 510px;
+            cursor: pointer;
+            
+
+        }
+        .indicator3{
+            position: absolute;
+            z-index: 8;
+            width: 15px;
+            height: 15px;
+            border-radius: 9px;
+            border: solid black;
+            background-color: rgb(56, 87, 87);
+            margin-top: 75px;
+            margin-left: 530px;
+            cursor: pointer;
+            
+
+        }
+        .indicator4{
+            position: absolute;
+            z-index: 8;
+            width: 15px;
+            height: 15px;
+            border-radius: 9px;
+            border: solid black;
+            margin-top: 75px;
+            margin-left: 550px;
+            cursor: pointer;
+            
+
+        }
+        .indicator5{
+            position: absolute;
+            z-index: 8;
+            width: 15px;
+            height: 15px;
+            border-radius: 9px;
+            border: solid black;
+            margin-top: 75px;
+            margin-left: 570px;
+            cursor: pointer;
+        }
+        .back{
+            position: absolute;
+            z-index: 10;
+            width: 40px;
+            height: 30px;
+            margin-top: 37px;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        .back:hover{
+            background-color: rgb(142, 142, 138);
+            border-radius: 5px;
+        }
+        
+    
+
+        
+    </style>
+</head>
+<body class="container">
+
+    <div class="box"></div>
+    <div class="box2"></div>
+     <div class="box3"></div>
+     <div class="box4"></div>
+     <div class="box5"><h3 class="apply">Apply for Admission</h3>
+    <p class="sy">SY:2026-2027 Application are now open</p>
+    <p class="quote">"Education is the most powerful weapon <br>
+        which you can use to change the world"</p>
+        <p class="autor">-Nelson Mandela</p>
+</div>
+    <div class="indicator1" onclick="indi1()"></div>
+    <Script>
+        function indi1(){
+            window.location.href="student_portal1.html";
+        }
+    </Script>
+    <div class="indicator2" onclick="indi2()"></div>
+    <Script>
+        function indi2(){
+            window.location.href="student_portal2.html";
+        }
+    </Script>
+    <div class="indicator3" onclick="indi3()"></div>
+    <Script>
+        function indi3(){
+            window.location.href="student_portal3.html";
+        }
+    </Script>
+    <div class="indicator4" onclick="indi4()"></div>
+    <Script>
+        function indi4(){
+            window.location.href="student_portal4.html";
+        }
+    </Script>
+    <div class="indicator5" onclick="indi5()"></div>
+    <Script>
+        function indi5(){
+            window.location.href="student_portal5.html";
+        }
+    </Script>
+    <div class="portal_box"></div>
+    <div class="details_box"></div>
+    <div class="home_address"></div>
+    <div class="subs"></div>
+    <div><img src="portal.png" class="portal_icon"></im></div>
+    <div class="Portal">Student Portal</div>
+    <div class="status">Status: &nbsp; Enrolled</div>
+    <div class="subjects">Subjects:</div>
+
+    <div class="details">
+        <div class="name">Name:</div>
+        <div class="bd">Birth Date:</div>
+        <div class="nn">Nick Name:</div>
+        <div  class="gender">Gender:</div>
+        <div class="natio">Nationality:</div>
+        <div class="grade">Grade Level:</div>
+        <div class="teacher">Teacher:</div>
+        <div class="enroll">Enrollment Date:</div>
+    </div>
+    
+    <div >
+        <div class="box1"><h4 class="na">Alvarez &nbsp;Redeen E.</h4></div>
+        <div class="boxs2"><h4 class="bdate">December 23 2006</h4></div>
+        <div class="boxs3"><h4 class="nname">Pogs</h4></div>
+        <div class="box4"><h4 class="gen">Male</h4></div>
+        <div class="box5"><h4 class="nationa">Filipino</h4></div>
+        <div class="box6"><h4 class="year">1st Year</h4></div>
+        <div class="box7"><h4 class="teach">Andrade Jomanuel</h4></div>
+        <div class="box8"><h4 class="enrolldate">July 20 2025</h4></div>
+        <div class="box9"><h4 class="obrero">Brgy: Onate De Leon IloIlo City</h4></div>
+        <div class="box10"><h4 class="ilo">IloIlo City</h4></div>
+        <div class="box10_1"><h4 class="_5000">5000</h4></div>
+        <div class="box11"><h4 class="iloilo">IloIlo</h4></div>
+        <div class="box12"><h4 class="phili">Philippines</h4></div>
+        <div class="box13"><h4 class="grace_num">+639*********</h4></div>
+        <div class="box14"><h4 class="grace_em">reedenalvarez09@gmail.com</h4></div>
+
+    </div>
+    <div>
+        <div class="_008"> GEN 008 &nbsp;&nbsp; (HINALUNGAN)</div>
+        <div class="_048">ITE 048 &nbsp;&nbsp; (LORILLA) </div>
+        <div class="_002">ART 002 &nbsp;&nbsp; (CANONERO) </div>
+        <div class="_399">ITE 399 &nbsp;&nbsp; (ANDRADE) </div>
+        <div class="_005">GEN 005 &nbsp;&nbsp; BAUTISTA </div>
+        <div class="_186">ITE 186 &nbsp;&nbsp; (LAURON) </div>
+        <div class="_031">PED 031 &nbsp;&nbsp; (FORRO) </div>
+        <div class="_022">NSTP 022 &nbsp;&nbsp; (ASIS) </div>
+    </div>
+    <div>
+        <div class="home_add">Home Address:</div>
+        <div class="city">City:</div>
+        <div class="zip">Zip code:</div>
+        <div class="province">Province:</div>
+        <div class="country"> Country:</div>
+        <div class="grace_email">Email:</div>
+        <div class="grace_number">Phone Number:</div>
+    </div>
+   
+    
+
+      <div><img src="emailicon.png" class="email-icon" title="Send Email">
+        <img src="call.png" class="call" title="Call">
+        <img src="search-icon.png" class="search">
+        <img src="logo.png" class="logo" title="Logo" id="logo" onclick="ToZoom()">
+        <script>
+            function ToZoom(){
+                document.getElementById("logo").classList.toggle("big")
+            }
+        </script>
+        <img src="logo.png" class="logo2">
+        <img src="grad.png" class="grad">
+        <img src="athlete.png" class="athlete">
+        <img src="social.png" class="social">
+        <img src="university.jpg" class="university-pic">
+        <img src="sam.jpeg" class="model">
+        <img src="law.jpg" class="law">
+        <img src="melborn.jpg" class="melborn">
+        <img src="back.png" class="back" onclick="back()">
+        <Script>
+            function back(){
+                window.location.href="portal.html";
+            }
+        </Script>
+        <img src="reeden.jpg" class="grace">
+        <img src="arrowright.png" class="arrowright" onclick="student_portal4()">
+        <Script>
+            function student_portal4(){
+                window.location.href="student_portal4.html";
+            }
+        </Script>
+        <img src="leftarrow.png" class="arrowleft" onclick="student_portal2()">
+        <Script>
+            function student_portal2(){
+                window.location.href="student_portal2.html";
+            }
+        </Script>
+        
+        
+        
+        <div class="melbornbg"></div>
+
+    </div>
+
+    <div><a href="https://mail.google.com/mail/u/0/#inbox" class="email" title=" Send Email">redmont@gmail.com</a>
+       
+        <p class="number" title="Call">+639774521540</p>
+        <p class="alumni" title="Visit Alumni" onclick="goToAlumni()">Alumni</p>
+        <Script>
+            function goToAlumni(){
+                window.location.href="Alumni.html";
+            }
+        </Script>
+        <p class="calendar" title="Date" onclick="goTocalendar()">Calendar</p>
+        <Script>
+            function goTocalendar(){
+                window.location.href="Calendar.html";
+            }
+        </Script>
+        <p class="portal" title="Visit Portal" onclick="goToportal()">Portal</p>
+        <Script>
+            function goToportal(){
+                window.location.href="Portal.html";
+            }
+        </Script>
+        <p class="support" title="Support Redmont University" onclick="goTosupport()"> Support RU</p>
+        <Script>
+            function goTosupport(){
+                window.location.href="Support.html";
+            }
+        </Script>
+        <p class="thebest">The Best University Of The Philippines</p>
+        <p class="redmon">Redmont</p>
+        <p class="univer">University</p>
+        <p class="univ">University Life</p>
+        <p class="graduate">Graduation</p>
+        <p class="athl">Athlete</p>
+        <p class="socia">Social</p>
+        
+        <div><button class="tour" title="Take a Tour">Take a Tour</button></div>
+        <div><button  class="applynow" title="Apply Now">Apply Now</button></div>
+    
+    </div>
+
+    
+        <div>
+            <h2 class="redmont" title="About Redmont University">Redmont </h2>
+            <h2 class="university" title="About Redmont University">University</h2>
+            <h2 class="home" title="Home" onclick="goTohome()">Home</h2>
+            <Script>
+                function goTohome(){
+                    window.location.href="index.html";
+                }
+            </Script>
+            <h2 class="pages" title="Pages" onclick="goTopage()">Pages</h2>
+            <Script>
+                function goTopage(){
+                    window.location.href="Pages.html";
+                }
+            </Script>
+            <h2 class="acads" title="Academics" onclick="goToacademics()">Academics</h2>
+            <Script>
+                function goToacademics(){
+                    window.location.href="Academics.html";
+                }
+            </Script>
+            <h2 class="ads" title="Admission" onclick="goToadmission()">Admission</h2>
+            <Script>
+                function goToadmission(){
+                    window.location.href="Admission.html";
+                }
+            </Script>
+            <h2 class="course" title="Courses" onclick="goTocourses()">Courses</h2>
+            <Script>
+                function goTocourses(){
+                    window.location.href="Courses.html";
+                }
+                
+            </Script>
+
+            <h2 class="news" title="News" onclick="goTonews()">News</h2>
+            <Script>
+                function goTonews(){
+                    window.location.href="News.html";
+                }
+            </Script>
+            <h2 class="uni" title="University Life" onclick="goTouniversity_life()">University Life</h2>
+            <Script>
+                function goTouniversity_life(){
+                    window.location.href="University_Life.html";
+                }
+            </Script>
+            <input  title="Search" type="text" class="search_bar">
+
+        </div>
+  
+    
+    
+</body>
+</html>
