@@ -544,7 +544,7 @@ ng="en">
         
         .alumni_box{
             position: absolute;
-            border: solid;
+            border: 0.7px solid gray;
             width: 1100px;
             height: 498px;
             z-index: 7;
@@ -596,7 +596,7 @@ ng="en">
             position: absolute;
             z-index: 7;
             margin-top: 74px;
-            margin-left: 373px;
+            margin-left: 395px;
             width:350px;
             height: 498px;
             border-radius: 5px;
@@ -604,20 +604,22 @@ ng="en">
         .grads{
             position: absolute;
             z-index: 7;
-            margin-top: 74px;
-            margin-left: 723px;
-            width:397.6px;
-            height: 249px;
+            margin-top: 300px;
+            width:360px;
+            height: 253px;
             border-radius: 5px;
+            object-fit:cover;
+            margin-left: 21px;
         }
         .exam{
             position: absolute;
             z-index: 7;
             margin-top: 300px;
-            margin-left: 723px;
-            width:397.6px;
-            height: 249px;
+            width:360px;
+            height: 253px;
             border-radius: 5px;
+            object-fit:cover;
+            margin-left: 758px;
         }
         .torightarrow{
             position: absolute;
@@ -645,8 +647,27 @@ ng="en">
             
             
         }
+        .batch{
+            position: absolute;
+            z-index: 13;
+            margin-top: 140px;
+            margin-left: 100px;
+            font-family: cursive;
+            font-size: 60px;
+            color: rgb(112, 115, 115);
+            font-weight: normal;
+        }
+        ._2015{
+            position: absolute;
+            z-index: 13;
+            margin-top: 140px;
+            margin-left: 860px;
+            font-family: cursive;
+            font-size: 60px;
+            color: rgb(112, 115, 115);
+            font-weight: normal;
+        }
        
-
 
 
 
@@ -690,9 +711,8 @@ ng="en">
         <img src="sam.jpeg" class="model">
         <img src="law.jpg" class="law">
         <img src="melborn.jpg" class="melborn">
-        <img src="success.webp" class="success">
         <img src="alumnigraduates.jpg" class="exgraduate">
-        <img src="graduates.webp" class="grads">
+        <img src="exalumni.jpg" class="grads">
         <img src="exalumni.jpg" class="exam">
         <img src="right arrow.png" class="torightarrow" title="Next" onclick="goToevents()">
         <Script>
@@ -738,6 +758,8 @@ ng="en">
         <p class="graduate">Graduation</p>
         <p class="athl">Athlete</p>
         <p class="socia">Social</p>
+        <p class="batch">BATCH</p>
+        <p class="_2015">2015</p>
         
         <div><button class="tour" title="Take a Tour">Take a Tour</button></div>
         <div><button  class="applynow" title="Apply Now">Apply Now</button></div>
@@ -754,7 +776,7 @@ ng="en">
                     window.location.href="index.html";
                 }
             </Script>
-            <h2 class="pages" title="Pages" onclick="goTopage()">Pages</h2>
+            <h2 class="pages" title="Pages" onclick="goTopage()">FAQ</h2>
             <Script>
                 function goTopage(){
                     window.location.href="Pages.html";
