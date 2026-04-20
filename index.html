@@ -342,6 +342,7 @@ ng="en">
         .tour{
             position: absolute;
             z-index: 3;
+            border: 1.2px solid black;
             margin-top: 280px;
             margin-left: 260px;
             background-color: beige;
@@ -523,6 +524,7 @@ ng="en">
         .applynow{
             position: absolute;
             z-index: 6;
+            border: 1px solid black;
             width: 120px;
             height: 30px;
             background-color: rgb(165, 241, 174);
@@ -632,7 +634,12 @@ ng="en">
         <p class="athl">Athlete</p>
         <p class="socia">Social</p>
         
-        <div><button class="tour" title="Take a Tour">Take a Tour</button></div>
+        <div><button class="tour" title="Take a Tour" onclick="to_location()">Take a Tour</button></div>
+        <Script>
+            function to_location(){
+                window.location.href="tour.html";
+            }
+        </Script>
         <div><button  class="applynow" title="Apply Now" onclick="toonline_form()">Apply Now</button></div>
         <Script>
             function toonline_form(){
